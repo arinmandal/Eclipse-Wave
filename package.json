@@ -1,0 +1,33 @@
+{
+  "name": "eclipse-wave",
+  "displayName": "Eclipse Wave",
+  "description": "A minimal, modern VS Code theme for clean and focused coding",
+  "publisher": "ArinMandal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arinmandal/Eclipse-Wave"
+  },
+  "keywords": [
+    "vscode",
+    "theme",
+    "eclipse-wave",
+    "dark",
+    "minimal",
+    "dark-theme"
+  ],
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Eclipse Wave",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Eclipse Wave-color-theme.json"
+      }
+    ]
+  }
+}
