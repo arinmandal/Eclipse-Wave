@@ -1,9 +1,10 @@
 {
   "name": "eclipse-wave",
+  "icon": "assets/logo.png",
   "displayName": "Eclipse Wave",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
-    "vscode": "^1.103.0"
+    "vscode": "^1.70.0"
   },
   "description": "A minimal, modern VS Code theme for clean and focused coding",
   "publisher": "ArinMandal",
@@ -27,7 +28,7 @@
       {
         "label": "Eclipse Wave",
         "uiTheme": "vs-dark",
-        "path": "./themes/Eclipse Wave-color-theme.json"
+        "path": "./themes/eclipse-wave-color-theme.json"
       }
     ]
   }
