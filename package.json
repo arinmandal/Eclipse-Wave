@@ -1,6 +1,10 @@
 {
   "name": "eclipse-wave",
   "displayName": "Eclipse Wave",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
   "description": "A minimal, modern VS Code theme for clean and focused coding",
   "publisher": "ArinMandal",
   "repository": {
@@ -15,9 +19,6 @@
     "minimal",
     "dark-theme"
   ],
-  "engines": {
-    "vscode": "^1.103.0"
-  },
   "categories": [
     "Themes"
   ],
