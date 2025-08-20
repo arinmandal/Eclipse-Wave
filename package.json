@@ -2,7 +2,7 @@
   "name": "eclipse-wave",
   "icon": "assets/logo.png",
   "displayName": "Eclipse Wave",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -31,5 +31,8 @@
         "path": "./themes/Eclipse Wave-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.10"
   }
 }
