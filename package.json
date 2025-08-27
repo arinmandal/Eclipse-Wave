@@ -1,8 +1,8 @@
 {
   "name": "eclipse-wave",
-  "icon": "assets/logo.png",
+  "icon": "assets/eclipse.png",
   "displayName": "Eclipse Wave",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "engines": {
     "vscode": "^1.70.0"
   },
