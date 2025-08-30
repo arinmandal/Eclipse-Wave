@@ -2,10 +2,11 @@
   "name": "eclipse-wave",
   "icon": "assets/eclipse.png",
   "displayName": "Eclipse Wave",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "engines": {
     "vscode": "^1.70.0"
   },
+  "license": "MIT",
   "description": "A minimal, modern VS Code theme for clean and focused coding",
   "publisher": "ArinMandal",
   "repository": {
@@ -31,8 +32,5 @@
         "path": "./themes/Eclipse Wave-color-theme.json"
       }
     ]
-  },
-  "devDependencies": {
-    "@types/react": "^19.1.10"
   }
 }

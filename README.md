@@ -74,6 +74,7 @@ If you’d like to improve Eclipse Wave:
 ---
 
 ## 📜 License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Eclipse Wave is released under the **MIT License** – free to use, modify, and share.
 
