@@ -1,138 +1,170 @@
 {
-  "name": "Eclipse Wave",
-  "colors": {
-    // === Base UI ===
-    "editor.background": "#0B0F1A",                // Deep cosmic black-blue
-    "editor.foreground": "#D6E5F5",                // Soft starlight white
-    "editor.selectionBackground": "#4361EE55",     // Nebula glow blue
-    "editor.inactiveSelectionBackground": "#1C2541",
-    "editorLineNumber.foreground": "#6C7086",
-    "editorLineNumber.activeForeground": "#9D7CFF", // Star purple
-    "editorCursor.foreground": "#FF4DFF",           // Neon magenta pulse
+	"name": "Eclipse Wave",
+	"colors": {
+		// === Base UI ===
+		"editor.background": "#0B0F1A", // Deep cosmic black-blue
+		"editor.foreground": "#D6E5F5", // Soft starlight white
+		"editor.selectionBackground": "#4361EE55", // Nebula glow blue
+		"editor.inactiveSelectionBackground": "#1C2541",
+		"editorLineNumber.foreground": "#6C7086",
+		"editorLineNumber.activeForeground": "#9D7CFF", // Star purple
+		"editorCursor.foreground": "#FF4DFF", // Neon magenta pulse
 
-    // === Tabs ===
-    "tab.activeBackground": "#1C1F3A",             // Indigo space
-    "tab.activeForeground": "#FFFFFF",
-    "tab.inactiveBackground": "#0B0F1A",
-    "tab.inactiveForeground": "#7A8490",
-    "tab.border": "#262C44",
+		// === Bracket Pair Colorization ===
+		"editorBracketHighlight.foreground1": "#FFB86C", // soft orange
+		"editorBracketHighlight.foreground2": "#8BE9FD", // cyan
+		"editorBracketHighlight.foreground3": "#50FA7B", // green
+		"editorBracketHighlight.foreground4": "#BD93F9", // purple
+		"editorBracketHighlight.foreground5": "#FF79C6", // pink
+		"editorBracketHighlight.foreground6": "#F1FA8C", // yellow
+		"editorBracketHighlight.unexpectedBracket.foreground": "#FF5555",
 
-    // === Activity Bar ===
-    "activityBar.background": "#14182E",           // Dark nebula navy
-    "activityBar.foreground": "#8AB4F8",
-    "activityBarBadge.background": "#E94560",      // Supernova red-pink
-    "activityBarBadge.foreground": "#FFFFFF",
+		// === Tabs ===
+		"tab.activeBackground": "#1C1F3A", // Indigo space
+		"tab.activeForeground": "#FFFFFF",
+		"tab.inactiveBackground": "#0B0F1A",
+		"tab.inactiveForeground": "#7A8490",
+		"tab.border": "#262C44",
 
-    // === Side Bar ===
-    "sideBar.background": "#101325",
-    "sideBar.foreground": "#B0B6C2",
-    "sideBarTitle.foreground": "#FF79C6",          // Nebula pink
-    "sideBarSectionHeader.background": "#1A1F3B",
+		// === Activity Bar ===
+		"activityBar.background": "#14182E", // Dark nebula navy
+		"activityBar.foreground": "#8AB4F8",
+		"activityBarBadge.background": "#E94560", // Supernova red-pink
+		"activityBarBadge.foreground": "#FFFFFF",
 
-    // === Status Bar ===
-    "statusBar.background": "#14182E",
-    "statusBar.foreground": "#B0B6C2",
-    "statusBar.border": "#202533",
-    "statusBar.debuggingBackground": "#9D7CFF",    // Cosmic violet
-    "statusBar.noFolderBackground": "#0B0F1A",
-    "statusBarItem.hoverBackground": "#1C1F3A",
+		// === Side Bar ===
+		"sideBar.background": "#101325",
+		"sideBar.foreground": "#B0B6C2",
+		"sideBarTitle.foreground": "#FF79C6", // Nebula pink
+		"sideBarSectionHeader.background": "#1A1F3B",
 
-    // === Panel ===
-    "panel.background": "#101325",
-    "panel.border": "#2C325A",
-    "panelTitle.activeForeground": "#61AFEF",
+		// === Status Bar ===
+		"statusBar.background": "#14182E",
+		"statusBar.foreground": "#B0B6C2",
+		"statusBar.border": "#202533",
+		"statusBar.debuggingBackground": "#9D7CFF", // Cosmic violet
+		"statusBar.noFolderBackground": "#0B0F1A",
+		"statusBarItem.hoverBackground": "#1C1F3A",
 
-    // === Git Diff ===
-    "diffEditor.insertedTextBackground": "#00E5FF33", // Cyan glow
-    "diffEditor.removedTextBackground": "#E9456033",  // Red-pink glow
+		// === Panel ===
+		"panel.background": "#101325",
+		"panel.border": "#2C325A",
+		"panelTitle.activeForeground": "#61AFEF",
 
-    // === Terminal ===
-    "terminal.background": "#0B0F1A",
-    "terminal.foreground": "#E6E6F0",
-    "terminalCursor.foreground": "#00E5FF",
-    "terminal.ansiBlack": "#1E1E2E",
-    "terminal.ansiRed": "#E94560",
-    "terminal.ansiGreen": "#8AFF80",
-    "terminal.ansiYellow": "#FFD166",
-    "terminal.ansiBlue": "#61AFEF",
-    "terminal.ansiMagenta": "#FF4DFF",
-    "terminal.ansiCyan": "#00E5FF",
-    "terminal.ansiWhite": "#E6E6F0",
-    "terminal.ansiBrightBlack": "#6C7086",
-    "terminal.ansiBrightWhite": "#FFFFFF"
-  },
+		// === Git Diff ===
+		"diffEditor.insertedTextBackground": "#00E5FF33", // Cyan glow
+		"diffEditor.removedTextBackground": "#E9456033", // Red-pink glow
 
-  // === Token Colors (Syntax) ===
-  "tokenColors": [
-    {
-      "name": "Comment",
-      "scope": ["comment", "punctuation.definition.comment"],
-      "settings": { "fontStyle": "italic", "foreground": "#6C7086" }
-    },
-    {
-      "name": "Keyword",
-      "scope": ["keyword", "storage.type", "storage.modifier"],
-      "settings": { "foreground": "#9D7CFF" }     // Galactic purple
-    },
-    {
-      "name": "String",
-      "scope": ["string", "constant.other.symbol"],
-      "settings": { "foreground": "#A3BE8C" }     // Aurora green
-    },
-    {
-      "name": "Function",
-      "scope": ["entity.name.function", "meta.function-call", "support.function"],
-      "settings": { "foreground": "#82AAFF" }     // Star blue
-    },
-    {
-      "name": "Variable",
-      "scope": ["variable", "string constant.other.placeholder"],
-      "settings": { "foreground": "#E5C07B" }     // Cosmic gold
-    },
-    {
-      "name": "Number, Constant, Attribute",
-      "scope": ["constant.numeric", "constant.language", "support.constant", "variable.parameter", "entity.other.attribute-name"],
-      "settings": { "foreground": "#F78C6C" }     // Solar orange
-    },
-    {
-      "name": "Class, Type",
-      "scope": ["entity.name.class", "support.class", "support.type", "storage.type"],
-      "settings": { "foreground": "#FFD166" }     // Golden star
-    },
-    {
-      "name": "Tag",
-      "scope": ["entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
-      "settings": { "foreground": "#E94560" }     // Supernova red
-    },
-    {
-      "name": "Operator",
-      "scope": ["keyword.operator", "punctuation"],
-      "settings": { "foreground": "#56B6C2" }     // Plasma cyan
-    },
-    {
-      "name": "Constant (Other)",
-      "scope": ["constant", "constant.other"],
-      "settings": { "foreground": "#BD93F9" }     // Nebula violet
-    },
-    {
-      "name": "Error",
-      "scope": ["invalid", "invalid.illegal"],
-      "settings": { "foreground": "#FF5370" }     // Warning red
-    },
-    {
-      "name": "Warning",
-      "scope": ["markup.warning", "markup.changed"],
-      "settings": { "foreground": "#FFCB6B" }     // Warm yellow
-    },
-    {
-      "name": "Selection/Highlight",
-      "scope": ["text.selection", "highlight"],
-      "settings": { "background": "#4361EE55" }
-    },
-    {
-      "name": "Builtin/Attribute",
-      "scope": ["support.type", "entity.other.attribute-name.class", "support.function.builtin"],
-      "settings": { "foreground": "#FF79C6" }     // Pink starlight
-    }
-  ]
+		// === Terminal ===
+		"terminal.background": "#0B0F1A",
+		"terminal.foreground": "#E6E6F0",
+		"terminalCursor.foreground": "#00E5FF",
+		"terminal.ansiBlack": "#1E1E2E",
+		"terminal.ansiRed": "#E94560",
+		"terminal.ansiGreen": "#8AFF80",
+		"terminal.ansiYellow": "#FFD166",
+		"terminal.ansiBlue": "#61AFEF",
+		"terminal.ansiMagenta": "#FF4DFF",
+		"terminal.ansiCyan": "#00E5FF",
+		"terminal.ansiWhite": "#E6E6F0",
+		"terminal.ansiBrightBlack": "#6C7086",
+		"terminal.ansiBrightWhite": "#FFFFFF"
+	},
+
+	// === Token Colors (Syntax) ===
+	"tokenColors": [
+		{
+			"name": "Comment",
+			"scope": ["comment", "punctuation.definition.comment"],
+			"settings": { "fontStyle": "italic", "foreground": "#6C7086" }
+		},
+		{
+			"name": "Keyword",
+			"scope": ["keyword", "storage.type", "storage.modifier"],
+			"settings": { "foreground": "#9D7CFF" } // Galactic purple
+		},
+		{
+			"name": "String",
+			"scope": ["string", "constant.other.symbol"],
+			"settings": { "foreground": "#A3BE8C" } // Aurora green
+		},
+		{
+			"name": "Function",
+			"scope": [
+				"entity.name.function",
+				"meta.function-call",
+				"support.function"
+			],
+			"settings": { "foreground": "#82AAFF" } // Star blue
+		},
+		{
+			"name": "Variable",
+			"scope": ["variable", "string constant.other.placeholder"],
+			"settings": { "foreground": "#E5C07B" } // Cosmic gold
+		},
+		{
+			"name": "Number, Constant, Attribute",
+			"scope": [
+				"constant.numeric",
+				"constant.language",
+				"support.constant",
+				"variable.parameter",
+				"entity.other.attribute-name"
+			],
+			"settings": { "foreground": "#F78C6C" } // Solar orange
+		},
+		{
+			"name": "Class, Type",
+			"scope": [
+				"entity.name.class",
+				"support.class",
+				"support.type",
+				"storage.type"
+			],
+			"settings": { "foreground": "#FFD166" } // Golden star
+		},
+		{
+			"name": "Tag",
+			"scope": [
+				"entity.name.tag",
+				"meta.tag.sgml",
+				"markup.deleted.git_gutter"
+			],
+			"settings": { "foreground": "#E94560" } // Supernova red
+		},
+		{
+			"name": "Operator",
+			"scope": ["keyword.operator", "punctuation"],
+			"settings": { "foreground": "#56B6C2" } // Plasma cyan
+		},
+		{
+			"name": "Constant (Other)",
+			"scope": ["constant", "constant.other"],
+			"settings": { "foreground": "#BD93F9" } // Nebula violet
+		},
+		{
+			"name": "Error",
+			"scope": ["invalid", "invalid.illegal"],
+			"settings": { "foreground": "#FF5370" } // Warning red
+		},
+		{
+			"name": "Warning",
+			"scope": ["markup.warning", "markup.changed"],
+			"settings": { "foreground": "#FFCB6B" } // Warm yellow
+		},
+		{
+			"name": "Selection/Highlight",
+			"scope": ["text.selection", "highlight"],
+			"settings": { "background": "#4361EE55" }
+		},
+		{
+			"name": "Builtin/Attribute",
+			"scope": [
+				"support.type",
+				"entity.other.attribute-name.class",
+				"support.function.builtin"
+			],
+			"settings": { "foreground": "#FF79C6" } // Pink starlight
+		}
+	]
 }
