@@ -68,7 +68,117 @@
 		"terminal.ansiCyan": "#00E5FF",
 		"terminal.ansiWhite": "#E6E6F0",
 		"terminal.ansiBrightBlack": "#6C7086",
-		"terminal.ansiBrightWhite": "#FFFFFF"
+		"terminal.ansiBrightWhite": "#FFFFFF",
+
+		// === Lists, Trees & Breadcrumbs ===
+		"list.hoverBackground": "#1C1F3A",
+		"list.activeSelectionBackground": "#2A2F50",
+		"list.activeSelectionForeground": "#FFFFFF",
+		"list.focusBackground": "#202533",
+		"list.inactiveSelectionBackground": "#14182E",
+		"breadcrumb.foreground": "#7A8490",
+		"breadcrumb.focusForeground": "#8AB4F8",
+		"breadcrumb.activeSelectionForeground": "#9D7CFF",
+
+		// === Buttons & Dropdowns ===
+		"button.background": "#1C1F3A",
+		"button.hoverBackground": "#2A2F50",
+		"dropdown.background": "#14182E",
+		"dropdown.foreground": "#B0B6C2",
+		"dropdown.border": "#262C44",
+
+		// === Peek View (Go to Definition popups) ===
+		"peekView.border": "#2C325A",
+		"peekViewEditor.background": "#101325",
+		"peekViewEditor.matchHighlightBackground": "#4361EE55",
+		"peekViewResult.background": "#14182E",
+		"peekViewResult.matchHighlightBackground": "#4361EE55",
+		"peekViewTitle.background": "#1A1F3B",
+
+		// === Git Decorations ===
+		"editorGutter.addedBackground": "#50FA7B55",
+		"editorGutter.modifiedBackground": "#61AFEFAA",
+		"editorGutter.deletedBackground": "#E9456055",
+
+		// === Notifications ===
+		"notificationCenterHeader.background": "#1A1F3B",
+		"notifications.background": "#101325",
+		"notifications.foreground": "#B0B6C2",
+		"notificationsErrorIcon.foreground": "#FF5555",
+		"notificationsWarningIcon.foreground": "#FFCB6B",
+		"notificationsInfoIcon.foreground": "#8BE9FD",
+
+		// === Editor Group / Tabs enhancements ===
+		"editorGroupHeader.tabsBackground": "#101325",
+		"editorGroup.border": "#262C44",
+		"tab.hoverBackground": "#1C1F3A",
+
+		// === Minimap & Scrollbar ===
+		"minimap.selectionHighlight": "#4361EE55",
+		"scrollbarSlider.background": "#2A2F5033",
+		"scrollbarSlider.hoverBackground": "#2A2F5066",
+		"scrollbarSlider.activeBackground": "#2A2F5088",
+
+		// === Input Controls ===
+		"input.background": "#14182E",
+		"input.foreground": "#B0B6C2",
+		"input.border": "#262C44",
+		"inputOption.activeBackground": "#1C1F3A",
+		"inputValidation.errorBackground": "#FF555533",
+		"inputValidation.warningBackground": "#FFCB6B33",
+		"inputValidation.infoBackground": "#8BE9FD33",
+
+		// === Debug / Testing ===
+		"debugToolBar.background": "#101325",
+		"debugIcon.breakpointForeground": "#E94560",
+		"testing.iconPassed": "#50FA7B",
+		"testing.iconFailed": "#FF5555",
+		"testing.iconQueued": "#FFD166",
+
+		// === Menu Bar ===
+		"menubar.selectionBackground": "#1C1F3A",
+		"menubar.selectionForeground": "#B0B6C2",
+		"menubar.selectionBorder": "#262C44",
+
+		// === Title Bar ===
+		"titleBar.activeBackground": "#14182E",
+		"titleBar.activeForeground": "#B0B6C2",
+		"titleBar.inactiveBackground": "#0B0F1A",
+		"titleBar.inactiveForeground": "#7A8490",
+
+		// === Quick Input / Command Palette ===
+		"quickInput.background": "#101325",
+		"quickInput.foreground": "#B0B6C2",
+		"quickInputList.focusBackground": "#1C1F3A",
+		"pickerGroup.foreground": "#9D7CFF",
+		"pickerGroup.border": "#262C44",
+
+		// === Progress Bar ===
+		"progressBar.background": "#9D7CFF",
+
+		// === Editor Find Widget ===
+		"editor.findMatchBackground": "#4361EE55",
+		"editor.findMatchHighlightBackground": "#9D7CFF33",
+		"editor.findRangeHighlightBackground": "#1C1F3A",
+
+		// === Editor Squiggles ===
+		"editorError.foreground": "#FF5555",
+		"editorWarning.foreground": "#FFCB6B",
+		"editorInfo.foreground": "#8BE9FD",
+
+		// === Merge Conflicts ===
+		"merge.currentHeaderBackground": "#61AFEFAA",
+		"merge.incomingHeaderBackground": "#9D7CFFAA",
+		"merge.currentContentBackground": "#61AFEF33",
+		"merge.incomingContentBackground": "#9D7CFF33",
+
+		// === Status Bar Items (Prominent) ===
+		"statusBarItem.prominentBackground": "#9D7CFF",
+		"statusBarItem.prominentHoverBackground": "#BD93F9",
+
+		// === Peek View Titles ===
+		"peekViewTitleLabel.foreground": "#B0B6C2",
+		"peekViewTitleDescription.foreground": "#7A8490"
 	},
 
 	// === Token Colors (Syntax) ===
