@@ -5,6 +5,16 @@ This project follows [Semantic Versioning](https://semver.org).
 
 ---
 
+## [1.1.1] – 2025-09-25
+
+### ✨ New Features & Enhancements
+
+- Improved Readability and Eye Comfort: Tweaked editor foreground from #D6E5F5 to #C0CBE3 and editor cursor from #FF4DFF to #BD93F9.
+- Enhanced Syntax Clarity: Punctuation now has its own distinct color (#A1ADC8), separating it from comments. Variables were changed to a more visible #E5A574.
+
+- Refined Color Palette: Made subtle changes to strings, HTML tags, and terminal colors for a more harmonious visual experience.
+- Updated README with new banner image.
+
 ## [1.1.0] – 2025-09-19
 
 ### ✨ Added / Updated UI Elements
