@@ -3,16 +3,16 @@
 	"colors": {
 		// === Base UI ===
 		"editor.background": "#0B0F1A", // Deep cosmic black-blue
-		"editor.foreground": "#D6E5F5", // Soft starlight white
+		"editor.foreground": "#C0CBE3", // Soft starlight white
 		"editor.selectionBackground": "#4361EE55", // Nebula glow blue
 		"editor.inactiveSelectionBackground": "#1C2541",
 		"editorLineNumber.foreground": "#6C7086",
 		"editorLineNumber.activeForeground": "#9D7CFF", // Star purple
-		"editorCursor.foreground": "#FF4DFF", // Neon magenta pulse
+		"editorCursor.foreground": "#BD93F9", // Neon magenta pulse
 
 		// === Bracket Pair Colorization ===
 		"editorBracketHighlight.foreground1": "#FFB86C", // soft orange
-		"editorBracketHighlight.foreground2": "#8BE9FD", // cyan
+		"editorBracketHighlight.foreground2": "#7CC8DE", // cyan
 		"editorBracketHighlight.foreground3": "#50FA7B", // green
 		"editorBracketHighlight.foreground4": "#BD93F9", // purple
 		"editorBracketHighlight.foreground5": "#FF79C6", // pink
@@ -52,8 +52,8 @@
 		"panelTitle.activeForeground": "#61AFEF",
 
 		// === Git Diff ===
-		"diffEditor.insertedTextBackground": "#00E5FF33", // Cyan glow
-		"diffEditor.removedTextBackground": "#E9456033", // Red-pink glow
+		"diffEditor.insertedTextBackground": "#00E5FF55", // Cyan glow
+		"diffEditor.removedTextBackground": "#E9456055", // Red-pink glow
 
 		// === Terminal ===
 		"terminal.background": "#0B0F1A",
@@ -61,7 +61,7 @@
 		"terminalCursor.foreground": "#00E5FF",
 		"terminal.ansiBlack": "#1E1E2E",
 		"terminal.ansiRed": "#E94560",
-		"terminal.ansiGreen": "#8AFF80",
+		"terminal.ansiGreen": "#70E570",
 		"terminal.ansiYellow": "#FFD166",
 		"terminal.ansiBlue": "#61AFEF",
 		"terminal.ansiMagenta": "#FF4DFF",
@@ -106,7 +106,7 @@
 		"notifications.foreground": "#B0B6C2",
 		"notificationsErrorIcon.foreground": "#FF5555",
 		"notificationsWarningIcon.foreground": "#FFCB6B",
-		"notificationsInfoIcon.foreground": "#8BE9FD",
+		"notificationsInfoIcon.foreground": "#7CC8DE",
 
 		// === Editor Group / Tabs enhancements ===
 		"editorGroupHeader.tabsBackground": "#101325",
@@ -126,7 +126,7 @@
 		"inputOption.activeBackground": "#1C1F3A",
 		"inputValidation.errorBackground": "#FF555533",
 		"inputValidation.warningBackground": "#FFCB6B33",
-		"inputValidation.infoBackground": "#8BE9FD33",
+		"inputValidation.infoBackground": "#7CC8DE33",
 
 		// === Debug / Testing ===
 		"debugToolBar.background": "#101325",
@@ -164,7 +164,7 @@
 		// === Editor Squiggles ===
 		"editorError.foreground": "#FF5555",
 		"editorWarning.foreground": "#FFCB6B",
-		"editorInfo.foreground": "#8BE9FD",
+		"editorInfo.foreground": "#7CC8DE",
 
 		// === Merge Conflicts ===
 		"merge.currentHeaderBackground": "#61AFEFAA",
@@ -183,98 +183,280 @@
 
 	// === Token Colors (Syntax) ===
 	"tokenColors": [
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 1: CORE ELEMENTS
+		//  Basic text, comments, strings, and numbers.
+		// ──────────────────────────────────────────────────────────
+
 		{
-			"name": "Comment",
+			"name": "Comments",
 			"scope": ["comment", "punctuation.definition.comment"],
-			"settings": { "fontStyle": "italic", "foreground": "#6C7086" }
+			"settings": {
+				"foreground": "#7A7F95",
+				"fontStyle": "italic"
+			}
 		},
 		{
-			"name": "Keyword",
-			"scope": ["keyword", "storage.type", "storage.modifier"],
-			"settings": { "foreground": "#9D7CFF" } // Galactic purple
+			"name": "Strings",
+			"scope": ["string", "punctuation.definition.string"],
+			"settings": {
+				"foreground": "#A1C682" // Bright Aurora Green
+			}
 		},
 		{
-			"name": "String",
-			"scope": ["string", "constant.other.symbol"],
-			"settings": { "foreground": "#A3BE8C" } // Aurora green
+			"name": "Numbers and Booleans",
+			"scope": ["constant.numeric", "constant.language"],
+			"settings": {
+				"foreground": "#FFAC40" // Solar Orange
+			}
+		},
+
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 2: KEYWORDS, STORAGE & OPERATORS
+		//  Language keywords, storage types, modifiers, and operators.
+		// ──────────────────────────────────────────────────────────
+
+		{
+			"name": "Keywords",
+			"scope": ["keyword.control", "keyword.other"],
+			"settings": {
+				"foreground": "#9D7CFF", // Galactic Purple
+				"fontStyle": "italic"
+			}
 		},
 		{
-			"name": "Function",
+			"name": "Storage Types & Modifiers (e.g., const, let, static, async)",
+			"scope": ["storage.type", "storage.modifier"],
+			"settings": {
+				"foreground": "#9D7CFF", // Galactic Purple
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Operators",
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#C792EA" // lavender-purple
+			}
+		},
+		{
+			"name": "Punctuation (Brackets, Commas, Semicolons)",
+			"scope": [
+				"punctuation.separator",
+				"punctuation.terminator",
+				"punctuation.section",
+				"punctuation.accessor"
+			],
+			"settings": {
+				"foreground": "#A1ADC8" // Comment Gray
+			}
+		},
+
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 3: FUNCTIONS & CLASSES
+		//  Declarations, calls, types, and inheritance.
+		// ──────────────────────────────────────────────────────────
+
+		{
+			"name": "Function Declarations & Calls",
 			"scope": [
 				"entity.name.function",
 				"meta.function-call",
 				"support.function"
 			],
-			"settings": { "foreground": "#82AAFF" } // Star blue
+			"settings": {
+				"foreground": "#82AAFF" // Star Blue
+			}
 		},
 		{
-			"name": "Variable",
-			"scope": ["variable", "string constant.other.placeholder"],
-			"settings": { "foreground": "#E5C07B" } // Cosmic gold
-		},
-		{
-			"name": "Number, Constant, Attribute",
-			"scope": [
-				"constant.numeric",
-				"constant.language",
-				"support.constant",
-				"variable.parameter",
-				"entity.other.attribute-name"
-			],
-			"settings": { "foreground": "#F78C6C" } // Solar orange
-		},
-		{
-			"name": "Class, Type",
+			"name": "Class & Type Declarations",
 			"scope": [
 				"entity.name.class",
+				"entity.name.type",
 				"support.class",
-				"support.type",
-				"storage.type"
+				"support.type"
 			],
-			"settings": { "foreground": "#FFD166" } // Golden star
+			"settings": {
+				"foreground": "#FFD166" // Golden Star
+			}
 		},
 		{
-			"name": "Tag",
+			"name": "Inherited Class",
+			"scope": "entity.other.inherited-class",
+			"settings": {
+				"foreground": "#FFD166", // Golden Star
+				"fontStyle": "italic"
+			}
+		},
+
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 4: VARIABLES, CONSTANTS & PARAMETERS
+		//  Variables, properties, constants, and function arguments.
+		// ──────────────────────────────────────────────────────────
+
+		{
+			"name": "Variables",
+			"scope": ["variable.other.object", "variable.other.readwrite"],
+			"settings": {
+				"foreground": "#E5A574"
+			}
+		},
+		{
+			"name": "Object Properties & Keys",
+			"scope": ["variable.other.property", "support.type.property-name"],
+			"settings": {
+				"foreground": "#7ED6D4" // Bracket Cyan
+			}
+		},
+		{
+			"name": "Language Constants & Built-in Variables (e.g., 'this', 'null')",
+			"scope": ["variable.language", "support.constant"],
+			"settings": {
+				"foreground": "#F78C6C" // Solar Orange
+			}
+		},
+		{
+			"name": "Function Parameters",
+			"scope": "variable.parameter",
+			"settings": {
+				"foreground": "#D7BA7D", // Cosmic Gold
+				"fontStyle": "italic"
+			}
+		},
+
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 5: HTML & CSS
+		//  Tags, attributes, IDs, and class names.
+		// ──────────────────────────────────────────────────────────
+
+		{
+			"name": "HTML Tags",
+			"scope": "entity.name.tag",
+			"settings": {
+				"foreground": "#E17888" // Aurora Rose
+			}
+		},
+		{
+			"name": "HTML/CSS Attributes",
 			"scope": [
-				"entity.name.tag",
-				"meta.tag.sgml",
-				"markup.deleted.git_gutter"
+				"entity.other.attribute-name",
+				"support.type.vendored.property-name"
 			],
-			"settings": { "foreground": "#E94560" } // Supernova red
+			"settings": {
+				"foreground": "#FF79C6" // Pink Starlight
+			}
 		},
 		{
-			"name": "Operator",
-			"scope": ["keyword.operator", "punctuation"],
-			"settings": { "foreground": "#56B6C2" } // Plasma cyan
+			"name": "HTML/CSS Attribute Values (e.g. class names)",
+			"scope": "string.quoted",
+			"settings": {
+				"foreground": "#B4D695" // Bright Aurora Green
+			}
 		},
 		{
-			"name": "Constant (Other)",
-			"scope": ["constant", "constant.other"],
-			"settings": { "foreground": "#BD93F9" } // Nebula violet
-		},
-		{
-			"name": "Error",
-			"scope": ["invalid", "invalid.illegal"],
-			"settings": { "foreground": "#FF5370" } // Warning red
-		},
-		{
-			"name": "Warning",
-			"scope": ["markup.warning", "markup.changed"],
-			"settings": { "foreground": "#FFCB6B" } // Warm yellow
-		},
-		{
-			"name": "Selection/Highlight",
-			"scope": ["text.selection", "highlight"],
-			"settings": { "background": "#4361EE55" }
-		},
-		{
-			"name": "Builtin/Attribute",
+			"name": "CSS Selectors (ID, Class)",
 			"scope": [
-				"support.type",
-				"entity.other.attribute-name.class",
-				"support.function.builtin"
+				"entity.other.attribute-name.id",
+				"entity.other.attribute-name.class"
 			],
-			"settings": { "foreground": "#FF79C6" } // Pink starlight
+			"settings": {
+				"foreground": "#FFD166" // Golden Star
+			}
+		},
+
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 6: MARKDOWN
+		//  Specific styles for Markdown files.
+		// ──────────────────────────────────────────────────────────
+
+		{
+			"name": "Markdown - Headings",
+			"scope": "entity.name.section.markdown",
+			"settings": {
+				"foreground": "#9D7CFF", // Galactic Purple
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown - Bold",
+			"scope": "markup.bold.markdown",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown - Italic",
+			"scope": "markup.italic.markdown",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markdown - Link URL",
+			"scope": "markup.underline.link.markdown",
+			"settings": {
+				"foreground": "#82AAFF", // Star Blue
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "Markdown - Inline Code",
+			"scope": "markup.inline.raw.string.markdown",
+			"settings": {
+				"foreground": "#B4D695" // Aurora Green
+			}
+		},
+
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 7: LANGUAGE SPECIFICS
+		//  Rules for specific languages like React (JSX) and Python.
+		// ──────────────────────────────────────────────────────────
+
+		{
+			"name": "React/JSX - Component Tags",
+			"scope": "support.class.component",
+			"settings": {
+				"foreground": "#FFD166" // Golden Star
+			}
+		},
+		{
+			"name": "Python - Decorators",
+			"scope": "entity.name.function.decorator",
+			"settings": {
+				"foreground": "#C792EA" // lavender-purple
+			}
+		},
+		{
+			"name": "Python - f-string interpolation",
+			"scope": [
+				"constant.character.format.placeholder.begin.python",
+				"constant.character.format.placeholder.end.python"
+			],
+			"settings": {
+				"foreground": "#F78C6C" // Solar Orange
+			}
+		},
+
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 8: INVALID & DEPRECATED
+		//  Highlighting for errors and outdated code.
+		// ──────────────────────────────────────────────────────────
+
+		{
+			"name": "Invalid or Illegal",
+			"scope": "invalid.illegal",
+			"settings": {
+				"foreground": "#FF5370",
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Deprecated",
+			"scope": "invalid.deprecated",
+			"settings": {
+				"foreground": "#E5C07B", // Cosmic Gold
+				"fontStyle": "italic strikethrough"
+			}
 		}
 	]
 }

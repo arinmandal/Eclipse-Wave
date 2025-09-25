@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Eclipse Wave Banner" width="100%" />
+</p>
+
 # 🌊 Eclipse Wave
 
-Eclipse Wave is a modern, minimal, and elegant theme designed for developers who love a clean coding experience.  
+Eclipse Wave is a modern, minimal, and elegant theme designed for developers who love a clean coding experience.
 Crafted with simplicity and readability in mind, Eclipse Wave enhances your workflow by giving your editor a fresh, sleek, and distraction-free look.
 
 ---
@@ -11,32 +15,6 @@ Crafted with simplicity and readability in mind, Eclipse Wave enhances your work
 - 👓 **Readable Syntax Highlighting** – Designed for long coding sessions without eye strain.
 - ⚡ **Minimal & Clean** – No unnecessary clutter, just focus on your code.
 - 🛠️ **Multi-language Support** – Works across popular languages (JavaScript, Python, C++, Java, etc.).
-
----
-
-## 📸 Screenshots
-
-### Dark Mode Preview
-
-<p align="center">
-  <img src="./assets/preview.png" alt="Eclipse Wave Dark Preview" width="600" />
-</p>
-
----
-
-### Language Syntax Previews
-
-<p align="center">
-  <img src="./assets/html.png" alt="Eclipse Wave HTML" width="200" style="margin:10px" />
-  <img src="./assets/css.png" alt="Eclipse Wave CSS" width="200" style="margin:10px" />
-  <img src="./assets/js.png" alt="Eclipse Wave JavaScript" width="200" style="margin:10px" />
-  <img src="./assets/react.png" alt="Eclipse Wave React" width="200" style="margin:10px" />
-</p>
-
-<p align="center">
-  <img src="./assets/ts.png" alt="Eclipse Wave TypeScript" width="200" style="margin:10px" />
-  <img src="./assets/python.png" alt="Eclipse Wave Python" width="200" style="margin:10px" />
-</p>
 
 ---
 
@@ -53,16 +31,16 @@ Crafted with simplicity and readability in mind, Eclipse Wave enhances your work
 
 ## ⚙️ Usage
 
-- Toggle theme:  
-    - Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).  
-    - Type `Color Theme`.  
-    - Select **Eclipse Wave**.
+- Toggle theme:
+  - Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+  - Type `Color Theme`.
+  - Select **Eclipse Wave**.
 
 ---
 
 ## 🛠️ Contribution
 
-Contributions are welcome! 🎉  
+Contributions are welcome! 🎉
 If you’d like to improve Eclipse Wave:
 
 1. Fork the repo
@@ -74,6 +52,7 @@ If you’d like to improve Eclipse Wave:
 ---
 
 ## 📜 License
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Eclipse Wave is released under the **MIT License** – free to use, modify, and share.
