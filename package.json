@@ -2,7 +2,7 @@
   "name": "eclipse-wave",
   "icon": "assets/eclipse.png",
   "displayName": "Eclipse Wave",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -19,7 +19,13 @@
     "eclipse-wave",
     "dark",
     "minimal",
-    "dark-theme"
+    "dark-theme",
+    "cosmic",
+    "purple",
+    "modern",
+    "developer",
+    "syntax-highlighting",
+    "color-theme"
   ],
   "categories": [
     "Themes"

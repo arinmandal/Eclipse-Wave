@@ -9,35 +9,30 @@
 		"editorLineNumber.foreground": "#6C7086",
 		"editorLineNumber.activeForeground": "#9D7CFF", // Star purple
 		"editorCursor.foreground": "#BD93F9", // Neon magenta pulse
-
 		// === Bracket Pair Colorization ===
 		"editorBracketHighlight.foreground1": "#FFB86C", // soft orange
 		"editorBracketHighlight.foreground2": "#7CC8DE", // cyan
-		"editorBracketHighlight.foreground3": "#50FA7B", // green
+		"editorBracketHighlight.foreground3": "#7EC699", // muted aurora green
 		"editorBracketHighlight.foreground4": "#BD93F9", // purple
 		"editorBracketHighlight.foreground5": "#FF79C6", // pink
-		"editorBracketHighlight.foreground6": "#F1FA8C", // yellow
+		"editorBracketHighlight.foreground6": "#E5C07B", // soft cosmic gold
 		"editorBracketHighlight.unexpectedBracket.foreground": "#FF5555",
-
 		// === Tabs ===
 		"tab.activeBackground": "#1C1F3A", // Indigo space
 		"tab.activeForeground": "#FFFFFF",
 		"tab.inactiveBackground": "#0B0F1A",
 		"tab.inactiveForeground": "#7A8490",
 		"tab.border": "#262C44",
-
 		// === Activity Bar ===
 		"activityBar.background": "#14182E", // Dark nebula navy
 		"activityBar.foreground": "#8AB4F8",
 		"activityBarBadge.background": "#E94560", // Supernova red-pink
 		"activityBarBadge.foreground": "#FFFFFF",
-
 		// === Side Bar ===
 		"sideBar.background": "#101325",
 		"sideBar.foreground": "#B0B6C2",
 		"sideBarTitle.foreground": "#FF79C6", // Nebula pink
 		"sideBarSectionHeader.background": "#1A1F3B",
-
 		// === Status Bar ===
 		"statusBar.background": "#14182E",
 		"statusBar.foreground": "#B0B6C2",
@@ -45,31 +40,29 @@
 		"statusBar.debuggingBackground": "#9D7CFF", // Cosmic violet
 		"statusBar.noFolderBackground": "#0B0F1A",
 		"statusBarItem.hoverBackground": "#1C1F3A",
-
+		"statusBarItem.remoteBackground": "#9D7CFF", // Galactic Purple
+		"statusBarItem.remoteForeground": "#FFFFFF",
 		// === Panel ===
 		"panel.background": "#101325",
 		"panel.border": "#2C325A",
 		"panelTitle.activeForeground": "#61AFEF",
-
 		// === Git Diff ===
 		"diffEditor.insertedTextBackground": "#00E5FF55", // Cyan glow
 		"diffEditor.removedTextBackground": "#E9456055", // Red-pink glow
-
 		// === Terminal ===
 		"terminal.background": "#0B0F1A",
 		"terminal.foreground": "#E6E6F0",
-		"terminalCursor.foreground": "#00E5FF",
+		"terminalCursor.foreground": "#7CC8DE", // soft nebula cyan
 		"terminal.ansiBlack": "#1E1E2E",
 		"terminal.ansiRed": "#E94560",
-		"terminal.ansiGreen": "#70E570",
-		"terminal.ansiYellow": "#FFD166",
+		"terminal.ansiGreen": "#7EC699", // muted aurora green
+		"terminal.ansiYellow": "#E5C07B", // soft cosmic gold
 		"terminal.ansiBlue": "#61AFEF",
-		"terminal.ansiMagenta": "#FF4DFF",
-		"terminal.ansiCyan": "#00E5FF",
+		"terminal.ansiMagenta": "#C792EA", // calming lavender
+		"terminal.ansiCyan": "#7CC8DE", // soft nebula cyan
 		"terminal.ansiWhite": "#E6E6F0",
 		"terminal.ansiBrightBlack": "#6C7086",
 		"terminal.ansiBrightWhite": "#FFFFFF",
-
 		// === Lists, Trees & Breadcrumbs ===
 		"list.hoverBackground": "#1C1F3A",
 		"list.activeSelectionBackground": "#2A2F50",
@@ -79,14 +72,12 @@
 		"breadcrumb.foreground": "#7A8490",
 		"breadcrumb.focusForeground": "#8AB4F8",
 		"breadcrumb.activeSelectionForeground": "#9D7CFF",
-
 		// === Buttons & Dropdowns ===
 		"button.background": "#1C1F3A",
 		"button.hoverBackground": "#2A2F50",
 		"dropdown.background": "#14182E",
 		"dropdown.foreground": "#B0B6C2",
 		"dropdown.border": "#262C44",
-
 		// === Peek View (Go to Definition popups) ===
 		"peekView.border": "#2C325A",
 		"peekViewEditor.background": "#101325",
@@ -94,31 +85,36 @@
 		"peekViewResult.background": "#14182E",
 		"peekViewResult.matchHighlightBackground": "#4361EE55",
 		"peekViewTitle.background": "#1A1F3B",
-
 		// === Git Decorations ===
 		"editorGutter.addedBackground": "#50FA7B55",
 		"editorGutter.modifiedBackground": "#61AFEFAA",
 		"editorGutter.deletedBackground": "#E9456055",
-
+		"gitDecoration.addedResourceForeground": "#7EC699", // muted aurora green
+		"gitDecoration.modifiedResourceForeground": "#FFD166",
+		"gitDecoration.deletedResourceForeground": "#E94560",
+		"gitDecoration.renamedResourceForeground": "#7CC8DE",
+		"gitDecoration.stageModifiedResourceForeground": "#61AFEF",
+		"gitDecoration.stageDeletedResourceForeground": "#E94560",
+		"gitDecoration.untrackedResourceForeground": "#A1C682",
+		"gitDecoration.ignoredResourceForeground": "#6C7086",
+		"gitDecoration.conflictingResourceForeground": "#FF5555",
+		"gitDecoration.submoduleResourceForeground": "#BD93F9",
 		// === Notifications ===
 		"notificationCenterHeader.background": "#1A1F3B",
 		"notifications.background": "#101325",
 		"notifications.foreground": "#B0B6C2",
 		"notificationsErrorIcon.foreground": "#FF5555",
-		"notificationsWarningIcon.foreground": "#FFCB6B",
+		"notificationsWarningIcon.foreground": "#D7BA7D", // cosmic gold warning
 		"notificationsInfoIcon.foreground": "#7CC8DE",
-
 		// === Editor Group / Tabs enhancements ===
 		"editorGroupHeader.tabsBackground": "#101325",
 		"editorGroup.border": "#262C44",
 		"tab.hoverBackground": "#1C1F3A",
-
 		// === Minimap & Scrollbar ===
 		"minimap.selectionHighlight": "#4361EE55",
 		"scrollbarSlider.background": "#2A2F5033",
 		"scrollbarSlider.hoverBackground": "#2A2F5066",
 		"scrollbarSlider.activeBackground": "#2A2F5088",
-
 		// === Input Controls ===
 		"input.background": "#14182E",
 		"input.foreground": "#B0B6C2",
@@ -127,70 +123,103 @@
 		"inputValidation.errorBackground": "#FF555533",
 		"inputValidation.warningBackground": "#FFCB6B33",
 		"inputValidation.infoBackground": "#7CC8DE33",
-
 		// === Debug / Testing ===
 		"debugToolBar.background": "#101325",
 		"debugIcon.breakpointForeground": "#E94560",
 		"testing.iconPassed": "#50FA7B",
 		"testing.iconFailed": "#FF5555",
 		"testing.iconQueued": "#FFD166",
-
 		// === Menu Bar ===
 		"menubar.selectionBackground": "#1C1F3A",
 		"menubar.selectionForeground": "#B0B6C2",
 		"menubar.selectionBorder": "#262C44",
-
 		// === Title Bar ===
 		"titleBar.activeBackground": "#14182E",
 		"titleBar.activeForeground": "#B0B6C2",
 		"titleBar.inactiveBackground": "#0B0F1A",
 		"titleBar.inactiveForeground": "#7A8490",
-
 		// === Quick Input / Command Palette ===
 		"quickInput.background": "#101325",
 		"quickInput.foreground": "#B0B6C2",
 		"quickInputList.focusBackground": "#1C1F3A",
 		"pickerGroup.foreground": "#9D7CFF",
 		"pickerGroup.border": "#262C44",
-
 		// === Progress Bar ===
 		"progressBar.background": "#9D7CFF",
-
 		// === Editor Find Widget ===
 		"editor.findMatchBackground": "#4361EE55",
 		"editor.findMatchHighlightBackground": "#9D7CFF33",
 		"editor.findRangeHighlightBackground": "#1C1F3A",
-
 		// === Editor Squiggles ===
 		"editorError.foreground": "#FF5555",
-		"editorWarning.foreground": "#FFCB6B",
+		"editorWarning.foreground": "#D7BA7D", // cosmic gold warning
 		"editorInfo.foreground": "#7CC8DE",
-
 		// === Merge Conflicts ===
 		"merge.currentHeaderBackground": "#61AFEFAA",
 		"merge.incomingHeaderBackground": "#9D7CFFAA",
 		"merge.currentContentBackground": "#61AFEF33",
 		"merge.incomingContentBackground": "#9D7CFF33",
-
 		// === Status Bar Items (Prominent) ===
 		"statusBarItem.prominentBackground": "#9D7CFF",
 		"statusBarItem.prominentHoverBackground": "#BD93F9",
-
 		// === Peek View Titles ===
 		"peekViewTitleLabel.foreground": "#B0B6C2",
-		"peekViewTitleDescription.foreground": "#7A8490"
+		"peekViewTitleDescription.foreground": "#7A8490",
+		// === Inlay Hints ===
+		"editorInlayHint.background": "#1C1F3A80",
+		"editorInlayHint.foreground": "#7A8490",
+		"editorInlayHint.typeForeground": "#9D7CFF",
+		"editorInlayHint.parameterForeground": "#7CC8DE",
+		// === Sticky Scroll ===
+		"editorStickyScroll.background": "#101325",
+		"editorStickyScrollHover.background": "#1C1F3A",
+		// === Ghost Text (AI Suggestions) ===
+		"editorGhostText.foreground": "#6C708650",
+		// === Widgets & Hover ===
+		"editorWidget.background": "#101325",
+		"editorWidget.border": "#2C325A",
+		"editorHoverWidget.background": "#14182E",
+		"editorHoverWidget.border": "#2C325A",
+		// === Word Highlight ===
+		"editor.wordHighlightBackground": "#9D7CFF33",
+		"editor.wordHighlightStrongBackground": "#4361EE44",
+		// === Gutter Controls ===
+		"editorGutter.commentRangeForeground": "#7A7F95",
+		"editorGutter.foldingControlForeground": "#7A8490",
+		// === Focus Border ===
+		"focusBorder": "#4361EE88",
+		// === Welcome Page ===
+		"welcomePage.background": "#0B0F1A",
+		"walkThrough.embeddedEditorBackground": "#101325",
+		// === Keybinding Labels ===
+		"keybindingLabel.background": "#1C1F3A",
+		"keybindingLabel.foreground": "#B0B6C2",
+		"keybindingLabel.border": "#262C44",
+		"keybindingLabel.bottomBorder": "#2C325A",
+		// === Settings UI ===
+		"settings.headerForeground": "#E6E6F0",
+		"settings.modifiedItemIndicator": "#9D7CFF",
+		"settings.dropdownBackground": "#14182E",
+		"settings.dropdownBorder": "#262C44",
+		"settings.checkboxBackground": "#14182E",
+		"settings.checkboxBorder": "#262C44",
+		"settings.textInputBackground": "#14182E",
+		"settings.textInputBorder": "#262C44",
+		"settings.numberInputBackground": "#14182E",
+		"settings.numberInputBorder": "#262C44"
 	},
-
 	// === Token Colors (Syntax) ===
 	"tokenColors": [
 		// ──────────────────────────────────────────────────────────
 		//  SECTION 1: CORE ELEMENTS
 		//  Basic text, comments, strings, and numbers.
 		// ──────────────────────────────────────────────────────────
-
 		{
 			"name": "Comments",
-			"scope": ["comment", "punctuation.definition.comment"],
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
 			"settings": {
 				"foreground": "#7A7F95",
 				"fontStyle": "italic"
@@ -198,27 +227,34 @@
 		},
 		{
 			"name": "Strings",
-			"scope": ["string", "punctuation.definition.string"],
+			"scope": [
+				"string",
+				"punctuation.definition.string"
+			],
 			"settings": {
 				"foreground": "#A1C682" // Bright Aurora Green
 			}
 		},
 		{
 			"name": "Numbers and Booleans",
-			"scope": ["constant.numeric", "constant.language"],
+			"scope": [
+				"constant.numeric",
+				"constant.language"
+			],
 			"settings": {
-				"foreground": "#FFAC40" // Solar Orange
+				"foreground": "#E5A574" // Warm Amber (softer)
 			}
 		},
-
 		// ──────────────────────────────────────────────────────────
 		//  SECTION 2: KEYWORDS, STORAGE & OPERATORS
 		//  Language keywords, storage types, modifiers, and operators.
 		// ──────────────────────────────────────────────────────────
-
 		{
 			"name": "Keywords",
-			"scope": ["keyword.control", "keyword.other"],
+			"scope": [
+				"keyword.control",
+				"keyword.other"
+			],
 			"settings": {
 				"foreground": "#9D7CFF", // Galactic Purple
 				"fontStyle": "italic"
@@ -226,7 +262,10 @@
 		},
 		{
 			"name": "Storage Types & Modifiers (e.g., const, let, static, async)",
-			"scope": ["storage.type", "storage.modifier"],
+			"scope": [
+				"storage.type",
+				"storage.modifier"
+			],
 			"settings": {
 				"foreground": "#9D7CFF", // Galactic Purple
 				"fontStyle": "italic"
@@ -251,12 +290,10 @@
 				"foreground": "#A1ADC8" // Comment Gray
 			}
 		},
-
 		// ──────────────────────────────────────────────────────────
 		//  SECTION 3: FUNCTIONS & CLASSES
 		//  Declarations, calls, types, and inheritance.
 		// ──────────────────────────────────────────────────────────
-
 		{
 			"name": "Function Declarations & Calls",
 			"scope": [
@@ -277,40 +314,47 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#FFD166" // Golden Star
+				"foreground": "#D7BA7D" // Cosmic Gold (balanced)
 			}
 		},
 		{
 			"name": "Inherited Class",
 			"scope": "entity.other.inherited-class",
 			"settings": {
-				"foreground": "#FFD166", // Golden Star
+				"foreground": "#D7BA7D", // Cosmic Gold (balanced)
 				"fontStyle": "italic"
 			}
 		},
-
 		// ──────────────────────────────────────────────────────────
 		//  SECTION 4: VARIABLES, CONSTANTS & PARAMETERS
 		//  Variables, properties, constants, and function arguments.
 		// ──────────────────────────────────────────────────────────
-
 		{
 			"name": "Variables",
-			"scope": ["variable.other.object", "variable.other.readwrite"],
+			"scope": [
+				"variable.other.object",
+				"variable.other.readwrite"
+			],
 			"settings": {
 				"foreground": "#E5A574"
 			}
 		},
 		{
 			"name": "Object Properties & Keys",
-			"scope": ["variable.other.property", "support.type.property-name"],
+			"scope": [
+				"variable.other.property",
+				"support.type.property-name"
+			],
 			"settings": {
 				"foreground": "#7ED6D4" // Bracket Cyan
 			}
 		},
 		{
 			"name": "Language Constants & Built-in Variables (e.g., 'this', 'null')",
-			"scope": ["variable.language", "support.constant"],
+			"scope": [
+				"variable.language",
+				"support.constant"
+			],
 			"settings": {
 				"foreground": "#F78C6C" // Solar Orange
 			}
@@ -323,12 +367,10 @@
 				"fontStyle": "italic"
 			}
 		},
-
 		// ──────────────────────────────────────────────────────────
 		//  SECTION 5: HTML & CSS
 		//  Tags, attributes, IDs, and class names.
 		// ──────────────────────────────────────────────────────────
-
 		{
 			"name": "HTML Tags",
 			"scope": "entity.name.tag",
@@ -360,15 +402,13 @@
 				"entity.other.attribute-name.class"
 			],
 			"settings": {
-				"foreground": "#FFD166" // Golden Star
+				"foreground": "#D7BA7D" // Cosmic Gold (balanced)
 			}
 		},
-
 		// ──────────────────────────────────────────────────────────
 		//  SECTION 6: MARKDOWN
 		//  Specific styles for Markdown files.
 		// ──────────────────────────────────────────────────────────
-
 		{
 			"name": "Markdown - Headings",
 			"scope": "entity.name.section.markdown",
@@ -406,12 +446,10 @@
 				"foreground": "#B4D695" // Aurora Green
 			}
 		},
-
 		// ──────────────────────────────────────────────────────────
 		//  SECTION 7: LANGUAGE SPECIFICS
 		//  Rules for specific languages like React (JSX) and Python.
 		// ──────────────────────────────────────────────────────────
-
 		{
 			"name": "React/JSX - Component Tags",
 			"scope": "support.class.component",
@@ -436,12 +474,10 @@
 				"foreground": "#F78C6C" // Solar Orange
 			}
 		},
-
 		// ──────────────────────────────────────────────────────────
 		//  SECTION 8: INVALID & DEPRECATED
 		//  Highlighting for errors and outdated code.
 		// ──────────────────────────────────────────────────────────
-
 		{
 			"name": "Invalid or Illegal",
 			"scope": "invalid.illegal",
@@ -457,6 +493,95 @@
 				"foreground": "#E5C07B", // Cosmic Gold
 				"fontStyle": "italic strikethrough"
 			}
+		},
+		// ──────────────────────────────────────────────────────────
+		//  SECTION 9: ADDITIONAL LANGUAGE SUPPORT
+		//  Regex, TypeScript types, JSON/YAML, Template strings
+		// ──────────────────────────────────────────────────────────
+		{
+			"name": "Regular Expressions",
+			"scope": [
+				"string.regexp",
+				"constant.character.escape"
+			],
+			"settings": {
+				"foreground": "#FF79C6"
+			}
+		},
+		{
+			"name": "Type Annotations",
+			"scope": [
+				"entity.name.type.module",
+				"support.type.primitive"
+			],
+			"settings": {
+				"foreground": "#7CC8DE"
+			}
+		},
+		{
+			"name": "JSON/YAML Keys",
+			"scope": [
+				"support.type.property-name.json",
+				"entity.name.tag.yaml"
+			],
+			"settings": {
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "Template String Interpolation",
+			"scope": [
+				"punctuation.definition.template-expression"
+			],
+			"settings": {
+				"foreground": "#F78C6C"
+			}
+		},
+		{
+			"name": "Macro/Attribute (Rust, C++)",
+			"scope": [
+				"entity.name.function.macro",
+				"meta.attribute"
+			],
+			"settings": {
+				"foreground": "#C792EA"
+			}
 		}
-	]
+	],
+	// === Semantic Highlighting (TypeScript, Rust, etc.) ===
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"variable.readonly": {
+			"foreground": "#E5A574",
+			"fontStyle": "bold"
+		},
+		"parameter": {
+			"foreground": "#D7BA7D",
+			"fontStyle": "italic"
+		},
+		"function.declaration": {
+			"foreground": "#82AAFF"
+		},
+		"class": {
+			"foreground": "#FFD166"
+		},
+		"interface": {
+			"foreground": "#7ED6D4"
+		},
+		"enum": {
+			"foreground": "#C792EA"
+		},
+		"enumMember": {
+			"foreground": "#FFAC40"
+		},
+		"namespace": {
+			"foreground": "#FF79C6"
+		},
+		"type": {
+			"foreground": "#FFD166"
+		},
+		"property.readonly": {
+			"fontStyle": "bold"
+		}
+	}
 }

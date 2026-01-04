@@ -5,6 +5,65 @@ This project follows [Semantic Versioning](https://semver.org).
 
 ---
 
+## [1.2.0] – 2026-01-05
+
+### 🚀 Industry-Standard Theme Upgrade
+
+This release brings Eclipse Wave up to industry-standard with modern VS Code theme features.
+
+#### ✨ New Features
+
+- **Semantic Highlighting Support** – Added `semanticHighlighting` and `semanticTokenColors` for enhanced TypeScript, Rust, and modern IDE intelligence
+- **Inlay Hints Styling** – Colors for TypeScript type hints and parameter hints
+- **Ghost Text Support** – Styling for AI code suggestions (Copilot, etc.)
+- **Sticky Scroll Colors** – Background colors for the new VS Code sticky scroll feature
+- **Git File Decorations** – Complete set of colors for file explorer git status (added, modified, deleted, renamed, untracked, ignored, conflicting, submodule)
+- **Settings UI Colors** – Styled dropdowns, checkboxes, and inputs in VS Code settings
+
+#### 🎨 Additional Token Colors
+
+- Regular Expressions and escape characters
+- TypeScript type annotations
+- JSON/YAML keys
+- Template string interpolation
+- Rust/C++ macros and attributes
+
+#### 🔧 UI Enhancements
+
+- Editor widgets and hover popups
+- Word highlight backgrounds
+- Gutter controls (folding, comments)
+- Focus borders
+- Welcome page backgrounds
+- Keybinding label styling
+
+#### 👁️ Eye Comfort Improvements
+
+Balanced color optimization for long coding sessions while preserving the Eclipse Wave aesthetic:
+
+**Syntax Colors (Softened):**
+- Numbers/Booleans: `#FFAC40` → `#E5A574` (Warm Amber)
+- Classes/Types: `#FFD166` → `#D7BA7D` (Cosmic Gold)
+- CSS Selectors: `#FFD166` → `#D7BA7D` (Cosmic Gold)
+
+**Bracket Colors (Softened):**
+- Bracket yellow: `#F1FA8C` → `#E5C07B` (Soft Cosmic Gold)
+- Bracket green: `#50FA7B` → `#7EC699` (Muted Aurora Green)
+
+**Terminal Colors (Softened):**
+- Green: `#70E570` → `#7EC699` (Muted Aurora)
+- Yellow: `#FFD166` → `#E5C07B` (Soft Cosmic Gold)
+- Magenta: `#FF4DFF` → `#C792EA` (Calming Lavender)
+- Cyan: `#00E5FF` → `#7CC8DE` (Soft Nebula Cyan)
+
+**UI Colors (Softened):**
+- Git Added: `#50FA7B` → `#7EC699` (Muted Aurora)
+- Warning Icons: `#FFCB6B` → `#D7BA7D` (Cosmic Gold)
+
+These changes reduce eye strain for 4-8+ hour sessions while maintaining the Eclipse Wave cosmic aesthetic.
+
+---
+
 ## [1.1.1] – 2025-09-25
 
 ### ✨ New Features & Enhancements
