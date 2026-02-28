@@ -2,16 +2,20 @@
   "name": "eclipse-wave",
   "icon": "assets/eclipse.png",
   "displayName": "Eclipse Wave",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "engines": {
     "vscode": "^1.70.0"
   },
   "license": "MIT",
-  "description": "A minimal, modern VS Code theme for clean and focused coding",
+  "description": "A cosmic dark theme with soft, eye-friendly colors — designed for long coding sessions. Beautiful syntax highlighting for JS, TS, Python, React, Rust, Go, HTML, CSS, Markdown & more.",
   "publisher": "ArinMandal",
   "repository": {
     "type": "git",
     "url": "https://github.com/arinmandal/Eclipse-Wave"
+  },
+  "galleryBanner": {
+    "color": "#0B0F1A",
+    "theme": "dark"
   },
   "keywords": [
     "vscode",
@@ -25,11 +29,20 @@
     "modern",
     "developer",
     "syntax-highlighting",
-    "color-theme"
+    "color-theme",
+    "eye-friendly",
+    "night",
+    "coding",
+    "beautiful",
+    "productivity",
+    "low-light",
+    "blue",
+    "neon"
   ],
   "categories": [
     "Themes"
   ],
+  "preview": false,
   "contributes": {
     "themes": [
       {

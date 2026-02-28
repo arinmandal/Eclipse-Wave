@@ -2,46 +2,80 @@
   <img src="assets/banner.png" alt="Eclipse Wave Banner" width="100%" />
 </p>
 
-# 🌊 Eclipse Wave
+<h1 align="center">🌊 Eclipse Wave</h1>
 
-Eclipse Wave is a modern, minimal, and elegant theme designed for developers who love a clean coding experience.
-Crafted with simplicity and readability in mind, Eclipse Wave enhances your workflow by giving your editor a fresh, sleek, and distraction-free look.
+<p align="center">
+  <strong>A cosmic dark theme with soft, eye-friendly colors — designed for long coding sessions.</strong>
+</p>
+
+--- 
+
+Eclipse Wave enhances your workflow with a carefully crafted cosmic palette — balancing vibrant syntax highlighting with soft, muted tones that reduce eye strain during 4-8+ hour coding sessions. Every color is intentionally chosen for readability, focus, and beauty.
+
+## 🎯 Color Palette
+
+| Color              | Hex       | Usage                                     |
+| ------------------ | --------- | ----------------------------------------- |
+| 🟣 Galactic Purple | `#9D7CFF` | Keywords, control flow, active tab accent |
+| 🔵 Star Blue       | `#82AAFF` | Functions, methods, JSON keys             |
+| 🟢 Aurora Green    | `#A1C682` | Strings, inline code                      |
+| 🟠 Warm Amber      | `#E5A574` | Variables, numbers                        |
+| 🟡 Cosmic Gold     | `#D7BA7D` | Classes, types, parameters                |
+| 🩵 Nebula Cyan     | `#7CC8DE` | Type annotations, DOM, interfaces         |
+| 🩷 Pink Starlight  | `#FF79C6` | Attributes, regex, namespaces             |
+| 🪻 Lavender        | `#C792EA` | Operators, decorators, enums              |
+| 🔴 Aurora Rose     | `#E17888` | HTML tags                                 |
+| ⭐ Golden Star     | `#FFD166` | React components, modules                 |
+
+> Background: `#0B0F1A` · Foreground: `#C0CBE3`
 
 ---
 
 ## ✨ Features
 
-- 🎨 **Modern Color Palette** – Balanced colors for dark backgrounds.
-- 👓 **Readable Syntax Highlighting** – Designed for long coding sessions without eye strain.
-- ⚡ **Minimal & Clean** – No unnecessary clutter, just focus on your code.
-- 🛠️ **Multi-language Support** – Works across popular languages (JavaScript, Python, C++, Java, etc.).
+- 🎨 **Cosmic Color Palette** — Deep space background with balanced, vibrant highlights
+- 👓 **Eye Comfort Optimized** — Softened colors for 4-8+ hour coding sessions without strain
+- ⚡ **Semantic Highlighting** — Enhanced TypeScript, Rust, and IDE intelligence support
+- 🌐 **Multi-language Support** — JS, TS, Python, React, Go, Rust, Java, C#, CSS, HTML, Markdown, SQL, Shell, TOML, Docker & more
+- 🤖 **AI-Ready** — Styled ghost text for Copilot and AI suggestions
+- 🔗 **Complete UI Coverage** — Every corner of VS Code is themed: tabs, sidebar, terminal, debug console, charts, and more
+- 🧩 **Bracket Pair Colorization** — Distinct colors for every bracket level
 
 ---
 
 ## 🚀 Installation
 
-### For **VS Code**
-
-1. Open **Extensions** sidebar in VS Code.
-2. Search for **Eclipse Wave**.
-3. Click **Install**.
-4. Press `Ctrl+K Ctrl+T` and select **Eclipse Wave** from the list.
+1. Open **Extensions** sidebar in VS Code (`Ctrl+Shift+X`)
+2. Search for **Eclipse Wave**
+3. Click **Install**
+4. Press `Ctrl+K Ctrl+T` and select **Eclipse Wave** from the list
 
 ---
 
-## ⚙️ Usage
+## ⚙️ Recommended Settings
 
-- Toggle theme:
-  - Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
-  - Type `Color Theme`.
-  - Select **Eclipse Wave**.
+For the best experience, add these to your `settings.json`:
+
+```json
+{
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "workbench.colorTheme": "Eclipse Wave"
+}
+```
 
 ---
 
 ## 🛠️ Contribution
 
 Contributions are welcome! 🎉
-If you’d like to improve Eclipse Wave:
+If you'd like to improve Eclipse Wave:
 
 1. Fork the repo
 2. Create a new branch (`git checkout -b feature-new`)
@@ -55,7 +89,7 @@ If you’d like to improve Eclipse Wave:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Eclipse Wave is released under the **MIT License** – free to use, modify, and share.
+Eclipse Wave is released under the **MIT License** — free to use, modify, and share.
 
 ---
 
