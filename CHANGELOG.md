@@ -5,6 +5,79 @@ This project follows [Semantic Versioning](https://semver.org).
 
 ---
 
+## [1.3.0] – 2026-02-28
+
+### 🚀 Industry-Standard Theme Overhaul
+
+This release brings Eclipse Wave to full industry-standard parity with top marketplace themes.
+
+#### 🎨 New UI Color Tokens 
+
+- **Line Highlight** – Subtle current line background for better code focus
+- **Bracket Match** – Purple-tinted bracket matching highlight
+- **Tab Accent** – Galactic Purple top border on active tabs
+- **Overview Ruler** – Full scrollbar marker colors (errors, warnings, info, git changes, find matches, brackets)
+- **Indent Guides** – Styled indent and active indent guide colors
+- **Sidebar Border** – Subtle border between sidebar and editor
+- **CodeLens** – Muted reference count styling
+- **Lightbulb** – Quick fix and auto-fix lightbulb colors
+- **Banner** – Notification banner styling
+- **Debug Console** – Info, warning, error, and source colors
+- **Charts** – Full color palette for testing/performance charts
+- **Suggest Widget** – Autocomplete dropdown styling with purple highlights
+- **Extension Button** – Styled "Install" button in extensions panel
+- **Terminal Tab** – Active terminal tab accent
+
+#### 🔤 New Token Color Scopes 
+
+- **Import/Export Keywords** – `import`, `export`, `from`, `as`
+- **Flow Control** – `return`, `break`, `continue`, `yield`, `throw`, try/catch, loops, conditionals
+- **`new` Keyword** – Bold purple styling
+- **DOM & Console** – `document`, `window`, `console.log`, Node.js built-ins
+- **Module Names** – Golden Star highlight
+- **Markdown Extended** – List markers, blockquotes, fenced code blocks, strikethrough, heading `#` symbols
+- **Diff Highlighting** – Inserted (green), deleted (red), changed (yellow)
+- **HTML Tag Brackets** – Muted `<` `>` symbols
+- **TypeScript** – Interface and enum specific styling
+- **Go** – Package and import name highlighting
+- **Rust** – Lifetime annotations with italic pink
+- **Java/C#** – Annotation/attribute styling
+- **Shell** – Variable highlighting
+- **TOML** – Table header styling
+- **this/self/super** – Italic purple for language built-in self-references
+- **SQL** – DML/DDL keyword bolding
+- **Docker** – Dockerfile keyword bolding
+- **Escape Characters** – Separated from regex, now Solar Orange
+
+#### 🧠 New Semantic Token Colors
+
+- `function.defaultLibrary` – Italic standard library functions
+- `variable.defaultLibrary` – Cyan for built-in variables
+- `method` / `method.declaration` – Star Blue with bold for declarations
+- `struct` – Golden Star (consistent with classes)
+- `typeParameter` – Italic Cosmic Gold
+- `decorator` – Italic lavender
+- `macro` – Lavender purple
+- `event` / `regexp` – Pink Starlight
+- `variable.readonly.defaultLibrary` – Bold cyan
+
+#### 📦 Marketplace Optimization
+
+- Added `galleryBanner` with deep cosmic background
+- SEO-optimized description with language keywords
+- Expanded keywords from 12 → 20 (maximum allowed)
+- Added `preview: false` flag
+
+#### 📝 README Overhaul
+
+- Added marketplace badges (version, installs, rating)
+<!-- - Added screenshot grid for 6 languages (JS, TS, Python, React, HTML, CSS) -->
+- Added color palette reference table with hex codes
+- Added recommended VS Code settings section
+- Improved feature descriptions
+
+---
+
 ## [1.2.0] – 2026-01-05
 
 ### 🚀 Industry-Standard Theme Upgrade
@@ -42,21 +115,25 @@ This release brings Eclipse Wave up to industry-standard with modern VS Code the
 Balanced color optimization for long coding sessions while preserving the Eclipse Wave aesthetic:
 
 **Syntax Colors (Softened):**
+
 - Numbers/Booleans: `#FFAC40` → `#E5A574` (Warm Amber)
 - Classes/Types: `#FFD166` → `#D7BA7D` (Cosmic Gold)
 - CSS Selectors: `#FFD166` → `#D7BA7D` (Cosmic Gold)
 
 **Bracket Colors (Softened):**
+
 - Bracket yellow: `#F1FA8C` → `#E5C07B` (Soft Cosmic Gold)
 - Bracket green: `#50FA7B` → `#7EC699` (Muted Aurora Green)
 
 **Terminal Colors (Softened):**
+
 - Green: `#70E570` → `#7EC699` (Muted Aurora)
 - Yellow: `#FFD166` → `#E5C07B` (Soft Cosmic Gold)
 - Magenta: `#FF4DFF` → `#C792EA` (Calming Lavender)
 - Cyan: `#00E5FF` → `#7CC8DE` (Soft Nebula Cyan)
 
 **UI Colors (Softened):**
+
 - Git Added: `#50FA7B` → `#7EC699` (Muted Aurora)
 - Warning Icons: `#FFCB6B` → `#D7BA7D` (Cosmic Gold)
 
