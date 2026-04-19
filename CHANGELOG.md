@@ -5,6 +5,40 @@ This project follows [Semantic Versioning](https://semver.org).
 
 ---
 
+## [1.4.0] – 2026-04-20
+
+### 🌤️ Eclipse Wave Light — New Theme Variant
+
+Introducing **Eclipse Wave Light**, a soft daytime companion to the original dark theme. Built for coders who prefer light backgrounds without sacrificing the Eclipse Wave cosmic aesthetic.
+
+#### ✨ New Theme: Eclipse Wave Light
+
+- **Warm lavender-white base** (`#F5F4F9`) — easy on the eyes under bright ambient light
+- **Cosmic color palette adapted for light backgrounds** — every accent color from the dark theme (purple, teal, blue, gold, rose) is carefully deepened and desaturated for high contrast readability
+- **Full parity with the dark theme** — all 14 syntax token sections, semantic token colors, and every UI region covered
+- **`uiTheme: vs`** — correctly registered as a light theme so VS Code applies native light chrome
+
+#### 🎨 Light Theme Color Mapping
+
+| Role | Dark | Light |
+|---|---|---|
+| Background | `#0B0F1A` Deep Cosmic Black | `#F5F4F9` Nebula White |
+| Keywords | `#9D7CFF` Galactic Purple | `#7A5FD0` Cosmic Violet |
+| Functions | `#82AAFF` Star Blue | `#2E5FA8` Deep Star Blue |
+| Strings | `#A1C682` Aurora Green | `#3A7A50` Deep Aurora Green |
+| Properties | `#7CC8DE` Nebula Cyan | `#277A82` Deep Teal |
+| Attributes | `#FF79C6` Pink Starlight | `#A0336B` Nebula Pink |
+| Classes | `#D7BA7D` Cosmic Gold | `#87642A` Earthy Gold |
+| Variables | `#E5A574` Warm Amber | `#B05E20` Earthy Amber |
+
+#### 📦 Package Updates
+
+- Registered `Eclipse Wave Light` in `package.json` contributes
+- Added marketplace keywords: `light`, `light-theme`, `day`, `soft`, `soothing`
+- Bumped version to `1.4.0`
+
+---
+
 ## [1.3.0] – 2026-02-28
 
 ### 🚀 Industry-Standard Theme Overhaul

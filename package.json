@@ -2,7 +2,7 @@
   "name": "eclipse-wave",
   "icon": "assets/eclipse.png",
   "displayName": "Eclipse Wave",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -37,7 +37,12 @@
     "productivity",
     "low-light",
     "blue",
-    "neon"
+    "neon",
+    "light",
+    "light-theme",
+    "day",
+    "soft",
+    "soothing"
   ],
   "categories": [
     "Themes"
@@ -49,6 +54,11 @@
         "label": "Eclipse Wave",
         "uiTheme": "vs-dark",
         "path": "./themes/Eclipse Wave-color-theme.json"
+      },
+      {
+        "label": "Eclipse Wave Light",
+        "uiTheme": "vs",
+        "path": "./themes/Eclipse Wave Light-color-theme.json"
       }
     ]
   }

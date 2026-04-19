@@ -5,14 +5,18 @@
 <h1 align="center">🌊 Eclipse Wave</h1>
 
 <p align="center">
-  <strong>A cosmic dark theme with soft, eye-friendly colors — designed for long coding sessions.</strong>
+  <strong>A cosmic theme collection — dark &amp; light — with eye-soothing colors designed for long coding sessions.</strong>
 </p>
 
---- 
+---
 
-Eclipse Wave enhances your workflow with a carefully crafted cosmic palette — balancing vibrant syntax highlighting with soft, muted tones that reduce eye strain during 4-8+ hour coding sessions. Every color is intentionally chosen for readability, focus, and beauty.
+Eclipse Wave enhances your workflow with a carefully crafted cosmic palette — balancing vibrant syntax highlighting with soft, muted tones that reduce eye strain during 4-8+ hour coding sessions. Now available in both **dark** and **light** variants, every color is intentionally chosen for readability, focus, and beauty.
 
-## 🎯 Color Palette
+> **Two themes in one extension:** `Eclipse Wave` (dark) · `Eclipse Wave Light` (light)
+
+## 🎯 Color Palettes
+
+### 🌑 Eclipse Wave (Dark)
 
 | Color              | Hex       | Usage                                     |
 | ------------------ | --------- | ----------------------------------------- |
@@ -29,12 +33,30 @@ Eclipse Wave enhances your workflow with a carefully crafted cosmic palette — 
 
 > Background: `#0B0F1A` · Foreground: `#C0CBE3`
 
+### 🌤️ Eclipse Wave Light
+
+| Color              | Hex       | Usage                                     |
+| ------------------ | --------- | ----------------------------------------- |
+| 🟣 Cosmic Violet   | `#7A5FD0` | Keywords, control flow, active tab accent |
+| 🔵 Deep Star Blue  | `#2E5FA8` | Functions, methods, JSON keys             |
+| 🟢 Deep Aurora     | `#3A7A50` | Strings, inline code                      |
+| 🟠 Earthy Amber    | `#B05E20` | Variables, numbers                        |
+| 🟡 Earthy Gold     | `#87642A` | Classes, types, parameters                |
+| 🩵 Deep Teal       | `#277A82` | Type annotations, DOM, interfaces         |
+| 🩷 Nebula Pink     | `#A0336B` | Attributes, regex, namespaces             |
+| 🪻 Muted Lavender  | `#8065C0` | Operators, decorators, enums              |
+| 🔴 Deep Rose       | `#A83050` | HTML tags                                 |
+| ⭐ Deep Gold       | `#8B6400` | React components, modules                 |
+
+> Background: `#F5F4F9` · Foreground: `#2B2D42`
+
 ---
 
 ## ✨ Features
 
-- 🎨 **Cosmic Color Palette** — Deep space background with balanced, vibrant highlights
-- 👓 **Eye Comfort Optimized** — Softened colors for 4-8+ hour coding sessions without strain
+- 🌗 **Dark & Light Variants** — Both `Eclipse Wave` (dark) and `Eclipse Wave Light` in one extension
+- 🎨 **Cosmic Color Palette** — Space-inspired accents that stay consistent across both variants
+- 👓 **Eye Comfort Optimized** — Softened, soothing colors for 4-8+ hour coding sessions without strain
 - ⚡ **Semantic Highlighting** — Enhanced TypeScript, Rust, and IDE intelligence support
 - 🌐 **Multi-language Support** — JS, TS, Python, React, Go, Rust, Java, C#, CSS, HTML, Markdown, SQL, Shell, TOML, Docker & more
 - 🤖 **AI-Ready** — Styled ghost text for Copilot and AI suggestions
@@ -48,7 +70,9 @@ Eclipse Wave enhances your workflow with a carefully crafted cosmic palette — 
 1. Open **Extensions** sidebar in VS Code (`Ctrl+Shift+X`)
 2. Search for **Eclipse Wave**
 3. Click **Install**
-4. Press `Ctrl+K Ctrl+T` and select **Eclipse Wave** from the list
+4. Press `Ctrl+K Ctrl+T` and select a variant:
+   - **Eclipse Wave** — deep cosmic dark
+   - **Eclipse Wave Light** — soft nebula light
 
 ---
 
