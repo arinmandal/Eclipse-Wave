@@ -2,10 +2,18 @@
   "name": "eclipse-wave",
   "icon": "assets/eclipse.png",
   "displayName": "Eclipse Wave",
-  "version": "1.4.0",
-  "engines": {
-    "vscode": "^1.70.0"
+  "version": "1.5.0",
+  "author": {
+    "name": "Arin Mandal",
+    "url": "https://github.com/arinmandal"
   },
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "bugs": {
+    "url": "https://github.com/arinmandal/Eclipse-Wave/issues"
+  },
+  "homepage": "https://github.com/arinmandal/Eclipse-Wave#readme",
   "license": "MIT",
   "description": "A cosmic dark theme with soft, eye-friendly colors — designed for long coding sessions. Beautiful syntax highlighting for JS, TS, Python, React, Rust, Go, HTML, CSS, Markdown & more.",
   "publisher": "ArinMandal",
@@ -59,6 +67,16 @@
         "label": "Eclipse Wave Light",
         "uiTheme": "vs",
         "path": "./themes/Eclipse Wave Light-color-theme.json"
+      },
+      {
+        "label": "Eclipse Wave Midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Eclipse Wave Midnight-color-theme.json"
+      },
+      {
+        "label": "Eclipse Wave Storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Eclipse Wave Storm-color-theme.json"
       }
     ]
   }

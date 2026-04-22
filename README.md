@@ -5,14 +5,14 @@
 <h1 align="center">🌊 Eclipse Wave</h1>
 
 <p align="center">
-  <strong>A cosmic theme collection — dark &amp; light — with eye-soothing colors designed for long coding sessions.</strong>
+  <strong>A cosmic theme collection — four variants — built for long coding sessions, late nights, and everything in between.</strong>
 </p>
 
 ---
 
-Eclipse Wave enhances your workflow with a carefully crafted cosmic palette — balancing vibrant syntax highlighting with soft, muted tones that reduce eye strain during 4-8+ hour coding sessions. Now available in both **dark** and **light** variants, every color is intentionally chosen for readability, focus, and beauty.
+Eclipse Wave started as a single dark theme and grew into a full family. Every variant shares the same cosmic DNA — space-inspired syntax colors, careful contrast, and attention to the parts of VS Code most themes ignore. Pick the one that matches your environment and your hours.
 
-> **Two themes in one extension:** `Eclipse Wave` (dark) · `Eclipse Wave Light` (light)
+> **Four variants:** `Eclipse Wave` · `Eclipse Wave Light` · `Eclipse Wave Midnight` · `Eclipse Wave Storm`
 
 ## 🎯 Color Palettes
 
@@ -50,18 +50,52 @@ Eclipse Wave enhances your workflow with a carefully crafted cosmic palette — 
 
 > Background: `#F5F4F9` · Foreground: `#2B2D42`
 
+### 🌑 Eclipse Wave Midnight
+
+| Color | Hex | Usage |
+| --- | --- | --- |
+| 🟣 Twilight Violet | `#8B6EF0` | Keywords, accent, active tab |
+| 🔵 Starlight Blue | `#7BA8F5` | Functions, methods |
+| 🟢 Nebula Leaf | `#8DC76E` | Strings, inline code |
+| 🟠 Ember | `#D4906A` | Variables, numbers |
+| 🟡 Stardust Gold | `#C4A268` | Classes, types |
+| 🩵 Deep Cyan | `#68B8CC` | Properties, DOM, interfaces |
+| 🩷 Soft Magenta | `#D860A8` | Attributes, regex |
+| 🪻 Deep Lavender | `#B880D5` | Operators, decorators |
+
+> Background: `#07090F` (near-void black) · Foreground: `#B0BCE0`  
+> *Designed for OLED displays and late-night sessions — reduced brightness, warmer tones.*
+
+### ⛈️ Eclipse Wave Storm
+
+| Color | Hex | Usage |
+| --- | --- | --- |
+| 🔵 Lightning Blue | `#7485E8` | Keywords, accent, active tab |
+| 🌊 Rain Blue | `#68A8E0` | Functions, methods |
+| 🟢 Seafoam | `#6DB585` | Strings, inline code |
+| 🟠 Amber Lightning | `#D08858` | Variables, numbers |
+| 🟡 Storm Gold | `#B89A60` | Classes, types |
+| 🩵 Storm Cyan | `#5AAAC0` | Properties, DOM, interfaces |
+| 🩷 Storm Pink | `#C060A0` | Attributes, regex |
+| 🪻 Purple Storm | `#9080C8` | Operators, decorators |
+
+> Background: `#0A1020` (dark storm blue) · Foreground: `#B4C4DC`  
+> *Cool, desaturated palette — easier on the eyes than the main dark theme without going full black.*
+
 ---
 
 ## ✨ Features
 
-- 🌗 **Dark & Light Variants** — Both `Eclipse Wave` (dark) and `Eclipse Wave Light` in one extension
-- 🎨 **Cosmic Color Palette** — Space-inspired accents that stay consistent across both variants
-- 👓 **Eye Comfort Optimized** — Softened, soothing colors for 4-8+ hour coding sessions without strain
-- ⚡ **Semantic Highlighting** — Enhanced TypeScript, Rust, and IDE intelligence support
-- 🌐 **Multi-language Support** — JS, TS, Python, React, Go, Rust, Java, C#, CSS, HTML, Markdown, SQL, Shell, TOML, Docker & more
-- 🤖 **AI-Ready** — Styled ghost text for Copilot and AI suggestions
-- 🔗 **Complete UI Coverage** — Every corner of VS Code is themed: tabs, sidebar, terminal, debug console, charts, and more
-- 🧩 **Bracket Pair Colorization** — Distinct colors for every bracket level
+- 🌌 **Four Variants** — Dark, Light, Midnight (OLED), and Storm (blue-gray) in one extension
+- 🎨 **Cosmic Color Palette** — Space-inspired accents consistent across all variants
+- 👓 **Eye Comfort First** — Softened tones designed for 4-8+ hour sessions; Midnight especially built for late nights
+- ⚡ **Semantic Highlighting** — Full semantic token coverage for TypeScript, Rust, Python, and more — including `*.mutable`, `*.async`, `*.deprecated` modifiers
+- 🌐 **Multi-language** — JS, TS, Python, React, Go, Rust, Java, C#, SCSS, GraphQL, HTML, Markdown, SQL, Shell, TOML, Docker & more
+- 🎯 **Complete IntelliSense Icons** — All 35 `symbolIcon.*` colors themed (the autocomplete icon colors most themes leave as defaults)
+- 🖥️ **Full 16-color Terminal** — All ANSI standard + bright variants covered; `git log`, `jest`, `npm` output looks right
+- 🤖 **AI-Ready** — Ghost text styling for Copilot suggestions
+- 🔗 **305+ UI Color Keys** — Tabs, sidebar, terminal, debug, charts, command center, notebooks, diff editor — everything
+- 🧩 **Bracket Pair Colorization** — Six distinct colors per bracket level
 
 ---
 
@@ -71,8 +105,10 @@ Eclipse Wave enhances your workflow with a carefully crafted cosmic palette — 
 2. Search for **Eclipse Wave**
 3. Click **Install**
 4. Press `Ctrl+K Ctrl+T` and select a variant:
-   - **Eclipse Wave** — deep cosmic dark
-   - **Eclipse Wave Light** — soft nebula light
+   - **Eclipse Wave** — deep cosmic dark, the original
+   - **Eclipse Wave Light** — soft nebula light for daytime
+   - **Eclipse Wave Midnight** — near-black OLED, warm palette for late nights
+   - **Eclipse Wave Storm** — dark blue-gray, cool and desaturated
 
 ---
 
