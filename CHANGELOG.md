@@ -36,11 +36,115 @@ Edit `src/palette.ts` → run `npm run build` → all 4 variant JSONs regenerate
 
 ---
 
+## [1.5.0] – 2026-04-22
+
+### 🌌 Two New Variants — Eclipse Wave Expands
+
+This is the biggest update Eclipse Wave has ever had. Every corner of the theme got attention — from the status bar to semantic tokens to terminal colors. Two new variants join the family, and the existing Dark and Light themes are now more complete than they've ever been.
+
+---
+
+#### 🆕 Eclipse Wave Midnight
+
+Built specifically for late-night sessions and OLED displays. The background goes near-void black (`#07090F`) and every syntax color is dialed back slightly — warmer, softer, less harsh. You'll notice keywords are now **Twilight Violet** (`#8B6EF0`) instead of the brighter purple, and strings shift to a gentler **Nebula Leaf** (`#8DC76E`). The whole palette just breathes easier at 2am.
+
+#### 🆕 Eclipse Wave Storm
+
+A dark blue-gray variant that sits between the original dark theme and Midnight. Think coding during a thunderstorm — cool, desaturated, slightly moody. **Lightning Blue** (`#7485E8`) takes over as the accent, functions go **Rain Blue** (`#68A8E0`), strings become a muted **Seafoam** (`#6DB585`). Easier on the eyes than the main dark theme without going full OLED-black.
+
+---
+
+#### 🔧 What Got Fixed in Dark & Light
+
+Eclipse Wave now covers every part of VS Code properly:
+
+- **Full 16-color terminal** — the 6 missing bright ANSI variants are finally there (`ansiBrightRed`, `ansiBrightGreen`, etc.). `git log`, `jest`, `npm` output will look correct now
+- **Symbol icons** — all 35 `symbolIcon.*` keys added. IntelliSense autocomplete icons now match the Eclipse Wave palette instead of VS Code defaults
+- **`type` field** — both themes now declare `"type": "dark"` / `"type": "light"` at the root. Without it VS Code can bleed through wrong fallback colors
+- **Command Center** — the VS Code search bar (`commandCenter.*`) is now fully styled
+- **Unsaved tab indicators** — `tab.activeModifiedBorder` and `tab.inactiveModifiedBorder` were missing. You'll see the dot accent now
+- **Status bar error/warning states** — `statusBarItem.errorBackground` and `statusBarItem.warningBackground` added
+- **Notebook / Jupyter** — cell borders, focus states, and status icons all covered
+- **Diff editor** — added `insertedLineBackground` and `removedLineBackground` for the full-line diff glow
+
+#### 🎨 Syntax Improvements
+
+- **Template literals fixed** — the entire template string used to render orange. Now only the `${}` expression delimiters are orange; the base string stays green (consistent with regular strings)
+- **SCSS support** — `$variable`, `@media`, `:hover`, `::before` all styled properly now
+- **GraphQL** — type and field name highlighting added
+- **Operator types split** — logical (`&&`, `||`), comparison (`===`), and assignment (`=`) operators can now be differentiated if you want to layer on top
+- **Object literal keys** — `meta.object-literal.key` scope added
+- **JSX children and tag meta** — better handling for React files
+
+#### 🧠 Semantic Token Additions
+
+- `property` and `property.declaration` — object property coloring for TS/Rust
+- `*.mutable` — underline on Rust `mut` variables
+- `*.async` — italic on async functions  
+- `*.deprecated` — strikethrough on deprecated symbols
+- `*.static` — bold on static members
+- `*.unsafe` — error-red on Rust `unsafe` blocks
+- `selfParameter` — Python `self` styled separately from regular params
+- `magicFunction` — Python dunder methods (`__init__`, `__str__`) get a bold treatment
+
+#### 🔍 Contrast Fixes
+
+Three values were slightly too dim on dark backgrounds (failed WCAG AA):
+
+- Line numbers: `#6C7086` → `#7C809A`
+- Comments: `#7A7F95` → `#8B8FA8`  
+- Inactive tab text: `#7A8490` → `#8A929E`
+
+Same vibe, just readable without squinting.
+
+#### 📦 Package
+
+- `"type"` field added to all theme JSON files
+- `author`, `bugs`, `homepage` fields added to `package.json`
+- Min VS Code engine bumped from `1.70.0` → `1.76.0` (matches actual features used)
+- Version `1.5.0`
+
+---
+
+## [1.4.0] – 2026-04-20
+
+### 🌤️ Eclipse Wave Light — New Theme Variant
+
+Introducing **Eclipse Wave Light**, a soft daytime companion to the original dark theme. Built for coders who prefer light backgrounds without sacrificing the Eclipse Wave cosmic aesthetic.
+
+#### ✨ New Theme: Eclipse Wave Light
+
+- **Warm lavender-white base** (`#F5F4F9`) — easy on the eyes under bright ambient light
+- **Cosmic color palette adapted for light backgrounds** — every accent color from the dark theme (purple, teal, blue, gold, rose) is carefully deepened and desaturated for high contrast readability
+- **Full parity with the dark theme** — all 14 syntax token sections, semantic token colors, and every UI region covered
+- **`uiTheme: vs`** — correctly registered as a light theme so VS Code applies native light chrome
+
+#### 🎨 Light Theme Color Mapping
+
+| Role | Dark | Light |
+|---|---|---|
+| Background | `#0B0F1A` Deep Cosmic Black | `#F5F4F9` Nebula White |
+| Keywords | `#9D7CFF` Galactic Purple | `#7A5FD0` Cosmic Violet |
+| Functions | `#82AAFF` Star Blue | `#2E5FA8` Deep Star Blue |
+| Strings | `#A1C682` Aurora Green | `#3A7A50` Deep Aurora Green |
+| Properties | `#7CC8DE` Nebula Cyan | `#277A82` Deep Teal |
+| Attributes | `#FF79C6` Pink Starlight | `#A0336B` Nebula Pink |
+| Classes | `#D7BA7D` Cosmic Gold | `#87642A` Earthy Gold |
+| Variables | `#E5A574` Warm Amber | `#B05E20` Earthy Amber |
+
+#### 📦 Package Updates
+
+- Registered `Eclipse Wave Light` in `package.json` contributes
+- Added marketplace keywords: `light`, `light-theme`, `day`, `soft`, `soothing`
+- Bumped version to `1.4.0`
+
+---
+
 ## [1.3.0] – 2026-02-28
 
-### 🚀 Industry-Standard Theme Overhaul
+### 🚀 Eclipse Wave Gets Deeper
 
-This release brings Eclipse Wave to full industry-standard parity with top marketplace themes.
+This release pushed Eclipse Wave further — more UI coverage, more language support, and a more refined feel across the board.
 
 #### 🎨 New UI Color Tokens 
 
@@ -111,9 +215,9 @@ This release brings Eclipse Wave to full industry-standard parity with top marke
 
 ## [1.2.0] – 2026-01-05
 
-### 🚀 Industry-Standard Theme Upgrade
+### 🚀 Eclipse Wave Grows Up
 
-This release brings Eclipse Wave up to industry-standard with modern VS Code theme features.
+This release modernised Eclipse Wave with VS Code's newer theming capabilities — semantic tokens, inlay hints, ghost text, and more.
 
 #### ✨ New Features
 
