@@ -4,6 +4,37 @@ All notable changes to **Eclipse Wave** will be documented in this file.
 This project follows [Semantic Versioning](https://semver.org).
 
 ---
+## [2.0.0] – 2026-07-28
+
+### 🏗️ Build Pipeline (Breaking Change)
+
+Themes are now **generated from TypeScript source** instead of hand-edited JSON.
+Edit `src/palette.ts` → run `npm run build` → all 4 variant JSONs regenerate automatically.
+
+#### What changed
+
+- Added `src/palette.ts` — single source of truth for all colors across all variants
+- Added `src/build-theme.ts` — converts a palette into a full VS Code theme object (305+ UI keys)
+- Added `src/build.ts` — generates all 4 JSONs + runs WCAG AA contrast audit on every build
+- Added `tsconfig.json` for TypeScript compilation
+- All 4 theme JSONs are now **build artifacts** (do not edit them directly)
+
+#### Contrast fixes (auto-detected by new audit)
+
+- Dark: `comment` and `fgMuted` were below 4.5:1 — lightened to pass WCAG AA
+- Light: `keyword`, `variable`, `operator`, `comment`, `fgMuted` — all adjusted
+- Midnight: `comment`, `punctuation`, `fgMuted` — lightened
+- Storm: `comment`, `punctuation`, `fgMuted` — lightened
+
+#### New files
+
+- `.github/workflows/release.yml` — CI builds + contrast-checks on every PR; auto-publishes to Marketplace on `v*` tag push
+- `extras/windows-terminal.json` — Windows Terminal color schemes (Dark, Midnight, Storm)
+- `extras/Eclipse Wave.itermcolors` — iTerm2 color scheme (Dark variant)
+- `CUSTOMIZATION.md` — copy-paste snippets for disabling italics, JSDoc highlights, etc.
+- `.vscodeignore` — excludes `src/`, `node_modules/`, CI config from the published `.vsix`
+
+---
 
 ## [1.5.0] – 2026-04-22
 
