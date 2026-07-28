@@ -1,4 +1,18 @@
-.vscode/**
-.vscode-test/**
+# Source files — not needed in the published extension
+src/
+tsconfig.json
+node_modules/
+
+# Dev/CI config
+.github/
 .gitignore
-vsc-extension-quickstart.md
+.eslintrc*
+*.log
+
+# Docs that don't need to ship
+CUSTOMIZATION.md
+
+# The themes/ folder MUST be included (don't add it here)
+# The extras/ folder is optional — ports for other terminals
+# Comment the line below out if you want to ship the ports
+extras/

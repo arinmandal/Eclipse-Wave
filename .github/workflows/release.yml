@@ -1,0 +1,75 @@
+name: Eclipse Wave CI/CD
+
+on:
+  push:
+    branches: [main]
+    tags:
+      - "v*"
+  pull_request:
+    branches: [main]
+
+jobs:
+  # ── Run on every push / PR ──────────────────────────────────
+  build-and-check:
+    name: Build & Contrast Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build themes + run contrast audit
+        run: npm run build
+        # Script exits with code 1 if any token fails WCAG AA — CI will fail
+
+      - name: Verify themes were generated
+        run: |
+          ls -la themes/
+          test -f themes/eclipse-wave-color-theme.json
+          test -f themes/eclipse-wave-light-color-theme.json
+          test -f themes/eclipse-wave-midnight-color-theme.json
+          test -f themes/eclipse-wave-storm-color-theme.json
+
+      - name: Package extension (dry run)
+        run: npm run package -- --no-yarn --out eclipse-wave-preview.vsix
+
+      - name: Upload VSIX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: eclipse-wave-preview
+          path: eclipse-wave-preview.vsix
+          retention-days: 7
+
+  # ── Publish only on version tags (v*) ──────────────────────
+  publish:
+    name: Publish to Marketplace
+    needs: build-and-check
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Publish to VS Code Marketplace
+        run: npm run publish:market
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
