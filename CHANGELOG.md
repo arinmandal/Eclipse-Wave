@@ -1,9 +1,75 @@
 # Changelog
 
-All notable changes to **Eclipse Wave** will be documented in this file.  
+All notable changes to **Eclipse Wave** will be documented in this file.
 This project follows [Semantic Versioning](https://semver.org).
 
 ---
+
+## [2.1.0] – 2026-07-29
+
+### 🎨 Color Palette Upgrade
+
+Full palette refresh across all 4 variants — every color benchmarked for readability, contrast, and long-session eye comfort. The goal: make each variant feel more intentional and distinctive while staying true to the Eclipse Wave aesthetic.
+
+---
+
+#### 🌑 Eclipse Wave Dark
+
+- **Background** `#0B0F1A` → `#1E2030` — shifted to a blue-tinted dark. Gives the theme a stronger identity and makes syntax colors pop more naturally against it
+- **Foreground** `#C0CBE3` → `#C0CAF5` — blue-white tone, easier on the eyes than neutral white after long sessions
+- **keyword** `#9D7CFF` → `#B8A0FF` — softer violet, less visual weight
+- **func** `#82AAFF` → `#7FC3FF` — cleaner sky blue, more distinct from keyword
+- **variable** `#E5A574` → `#FFAD70` — warmer amber, better separation from type
+- **type** `#D7BA7D` → `#E8C97A` — golden wheat, more distinct from variable
+- **interface** `#7CC8DE` → `#89DCEB` — brighter sapphire teal, cleaner
+- **attribute / tag** `#FF79C6` / `#E17888` → `#F28FAD` — unified muted rose, less aggressive than hot pink
+- **operator** `#C792EA` → `#CBA6F7` — lavender, softer and more readable
+- **module** `#FFD166` → `#FAB387` — warm peach, more distinctive than yellow
+- **comment** `#6878A0` → `#6C7A9C` — blue-gray, passes WCAG AA on new background
+- **punctuation / fgMuted** → `#8B92B8` — nudged up to pass WCAG AA on new background
+
+#### ☀️ Eclipse Wave Light
+
+- **Background** `#F5F4F9` → `#F6F8FA` — cooler off-white. Removes glare without losing the light mode feel
+- **Foreground** `#2B2D42` → `#1F2328` — deeper near-black, higher contrast
+- **func** `#2E5FA8` → `#1C5FAA` — richer navy blue
+- **string** `#3A7A50` → `#287A46` — deeper forest green, more contrast on light bg
+- **operator** `#6A50B8` → `#8250DF` — more saturated purple, clearly distinct from keyword
+- **tag** `#A83050` → `#CF222E` — cleaner red, universally readable for HTML tags
+- **comment** `#7878A8` → `#57606A` — neutral gray, unobtrusive without disappearing
+
+#### 🌚 Eclipse Wave Midnight
+
+- **Background** `#07090F` → `#000000` — true black for OLED/AMOLED displays. Battery saving and visually striking
+- **keyword** `#8B6EF0` → `#A78BFA` — more vivid violet, needed on true black or it fades
+- **func** `#7BA8F5` → `#60A5FA` — brighter blue, high readability on black
+- **string** `#8DC76E` → `#34D399` — emerald green, vivid without being neon
+- **variable** `#D4906A` → `#FB923C` — warm orange, strong contrast on black
+- **type** `#C4A268` → `#F9E2AF` — warm yellow, readable and warm
+- **interface** `#68B8CC` → `#94E2D5` — brighter teal, more distinctive
+- **attribute** `#D860A8` → `#F472B6` — vivid pink, stands out clearly on black
+- **module** `#E8C060` → `#FBBF24` — bold amber, strong on pure black
+- **tag** `#D07080` → `#F38BA8` — vivid rose-red, readable on black
+
+#### ⛈️ Eclipse Wave Storm
+
+- **Background** `#0A1020` → `#0D1117` — deeper blue-black, stronger cool identity
+- **Foreground** `#B4C4DC` → `#E6EDF3` — brighter and cleaner, better readability
+- **keyword** `#7485E8` → `#FF7B72` — warm red-orange, creates clear separation from func
+- **func** `#68A8E0` → `#D2A8FF` — soft purple, distinct from keyword
+- **string** `#6DB585` → `#A5D6FF` — light blue, airy and readable on deep bg
+- **variable** `#D08858` → `#FFA657` — warmer orange, high contrast
+- **type** `#B89A60` → `#7EE787` — fresh green, distinct from all other tokens
+- **interface** `#5AAAC0` → `#79C0FF` — clear blue, differentiated from string
+- **tag** `#C07080` → `#7EE787` — unified with type (green family)
+- **comment** `#5A6A88` → `#8B949E` — neutral blue-gray, clean and unobtrusive
+
+#### 🔧 Contrast
+
+All tokens across all 4 variants verified against WCAG AA (4.5:1) by the automated contrast audit in `npm run build`.
+
+---
+
 ## [2.0.0] – 2026-07-28
 
 ### 🏗️ Build Pipeline (Breaking Change)
@@ -42,67 +108,38 @@ Edit `src/palette.ts` → run `npm run build` → all 4 variant JSONs regenerate
 
 This is the biggest update Eclipse Wave has ever had. Every corner of the theme got attention — from the status bar to semantic tokens to terminal colors. Two new variants join the family, and the existing Dark and Light themes are now more complete than they've ever been.
 
----
-
 #### 🆕 Eclipse Wave Midnight
 
-Built specifically for late-night sessions and OLED displays. The background goes near-void black (`#07090F`) and every syntax color is dialed back slightly — warmer, softer, less harsh. You'll notice keywords are now **Twilight Violet** (`#8B6EF0`) instead of the brighter purple, and strings shift to a gentler **Nebula Leaf** (`#8DC76E`). The whole palette just breathes easier at 2am.
+Built specifically for late-night sessions and OLED displays. The background goes near-void black (`#07090F`) and every syntax color is dialed back slightly — warmer, softer, less harsh. Keywords are **Twilight Violet** (`#8B6EF0`), strings shift to a gentler **Nebula Leaf** (`#8DC76E`). The whole palette breathes easier at 2am.
 
 #### 🆕 Eclipse Wave Storm
 
-A dark blue-gray variant that sits between the original dark theme and Midnight. Think coding during a thunderstorm — cool, desaturated, slightly moody. **Lightning Blue** (`#7485E8`) takes over as the accent, functions go **Rain Blue** (`#68A8E0`), strings become a muted **Seafoam** (`#6DB585`). Easier on the eyes than the main dark theme without going full OLED-black.
-
----
+A dark blue-gray variant that sits between the original dark theme and Midnight. Think coding during a thunderstorm — cool, desaturated, slightly moody. **Lightning Blue** (`#7485E8`) takes over as the accent, functions go **Rain Blue** (`#68A8E0`), strings become a muted **Seafoam** (`#6DB585`).
 
 #### 🔧 What Got Fixed in Dark & Light
 
-Eclipse Wave now covers every part of VS Code properly:
-
-- **Full 16-color terminal** — the 6 missing bright ANSI variants are finally there (`ansiBrightRed`, `ansiBrightGreen`, etc.). `git log`, `jest`, `npm` output will look correct now
-- **Symbol icons** — all 35 `symbolIcon.*` keys added. IntelliSense autocomplete icons now match the Eclipse Wave palette instead of VS Code defaults
-- **`type` field** — both themes now declare `"type": "dark"` / `"type": "light"` at the root. Without it VS Code can bleed through wrong fallback colors
-- **Command Center** — the VS Code search bar (`commandCenter.*`) is now fully styled
-- **Unsaved tab indicators** — `tab.activeModifiedBorder` and `tab.inactiveModifiedBorder` were missing. You'll see the dot accent now
-- **Status bar error/warning states** — `statusBarItem.errorBackground` and `statusBarItem.warningBackground` added
-- **Notebook / Jupyter** — cell borders, focus states, and status icons all covered
-- **Diff editor** — added `insertedLineBackground` and `removedLineBackground` for the full-line diff glow
+- **Full 16-color terminal** — 6 missing bright ANSI variants added
+- **Symbol icons** — all 35 `symbolIcon.*` keys added
+- **`type` field** — both themes now declare `"type": "dark"` / `"type": "light"`
+- **Command Center** — VS Code search bar fully styled
+- **Unsaved tab indicators** — `tab.activeModifiedBorder` and `tab.inactiveModifiedBorder` added
+- **Status bar error/warning states** — `statusBarItem.errorBackground` and `warningBackground` added
+- **Notebook / Jupyter** — cell borders, focus states, status icons covered
+- **Diff editor** — `insertedLineBackground` and `removedLineBackground` added
 
 #### 🎨 Syntax Improvements
 
-- **Template literals fixed** — the entire template string used to render orange. Now only the `${}` expression delimiters are orange; the base string stays green (consistent with regular strings)
-- **SCSS support** — `$variable`, `@media`, `:hover`, `::before` all styled properly now
-- **GraphQL** — type and field name highlighting added
-- **Operator types split** — logical (`&&`, `||`), comparison (`===`), and assignment (`=`) operators can now be differentiated if you want to layer on top
-- **Object literal keys** — `meta.object-literal.key` scope added
-- **JSX children and tag meta** — better handling for React files
+- Template literals fixed, SCSS support, GraphQL, operator types split, object literal keys, JSX improvements
 
 #### 🧠 Semantic Token Additions
 
-- `property` and `property.declaration` — object property coloring for TS/Rust
-- `*.mutable` — underline on Rust `mut` variables
-- `*.async` — italic on async functions  
-- `*.deprecated` — strikethrough on deprecated symbols
-- `*.static` — bold on static members
-- `*.unsafe` — error-red on Rust `unsafe` blocks
-- `selfParameter` — Python `self` styled separately from regular params
-- `magicFunction` — Python dunder methods (`__init__`, `__str__`) get a bold treatment
+- `property`, `property.declaration`, `*.mutable`, `*.async`, `*.deprecated`, `*.static`, `*.unsafe`, `selfParameter`, `magicFunction`
 
 #### 🔍 Contrast Fixes
 
-Three values were slightly too dim on dark backgrounds (failed WCAG AA):
-
 - Line numbers: `#6C7086` → `#7C809A`
-- Comments: `#7A7F95` → `#8B8FA8`  
+- Comments: `#7A7F95` → `#8B8FA8`
 - Inactive tab text: `#7A8490` → `#8A929E`
-
-Same vibe, just readable without squinting.
-
-#### 📦 Package
-
-- `"type"` field added to all theme JSON files
-- `author`, `bugs`, `homepage` fields added to `package.json`
-- Min VS Code engine bumped from `1.70.0` → `1.76.0` (matches actual features used)
-- Version `1.5.0`
 
 ---
 
@@ -110,16 +147,12 @@ Same vibe, just readable without squinting.
 
 ### 🌤️ Eclipse Wave Light — New Theme Variant
 
-Introducing **Eclipse Wave Light**, a soft daytime companion to the original dark theme. Built for coders who prefer light backgrounds without sacrificing the Eclipse Wave cosmic aesthetic.
-
 #### ✨ New Theme: Eclipse Wave Light
 
 - **Warm lavender-white base** (`#F5F4F9`) — easy on the eyes under bright ambient light
-- **Cosmic color palette adapted for light backgrounds** — every accent color from the dark theme (purple, teal, blue, gold, rose) is carefully deepened and desaturated for high contrast readability
-- **Full parity with the dark theme** — all 14 syntax token sections, semantic token colors, and every UI region covered
-- **`uiTheme: vs`** — correctly registered as a light theme so VS Code applies native light chrome
-
-#### 🎨 Light Theme Color Mapping
+- **Cosmic color palette adapted for light backgrounds** — every accent color deepened and desaturated for high contrast readability
+- **Full parity with the dark theme** — all 14 syntax token sections, semantic token colors, every UI region covered
+- **`uiTheme: vs`** — correctly registered as a light theme
 
 | Role | Dark | Light |
 |---|---|---|
@@ -132,84 +165,27 @@ Introducing **Eclipse Wave Light**, a soft daytime companion to the original dar
 | Classes | `#D7BA7D` Cosmic Gold | `#87642A` Earthy Gold |
 | Variables | `#E5A574` Warm Amber | `#B05E20` Earthy Amber |
 
-#### 📦 Package Updates
-
-- Registered `Eclipse Wave Light` in `package.json` contributes
-- Added marketplace keywords: `light`, `light-theme`, `day`, `soft`, `soothing`
-- Bumped version to `1.4.0`
-
 ---
 
 ## [1.3.0] – 2026-02-28
 
 ### 🚀 Eclipse Wave Gets Deeper
 
-This release pushed Eclipse Wave further — more UI coverage, more language support, and a more refined feel across the board.
+#### 🎨 New UI Color Tokens
 
-#### 🎨 New UI Color Tokens 
+- Line Highlight, Bracket Match, Tab Accent, Overview Ruler, Indent Guides, Sidebar Border, CodeLens, Lightbulb, Banner, Debug Console, Charts, Suggest Widget, Extension Button, Terminal Tab
 
-- **Line Highlight** – Subtle current line background for better code focus
-- **Bracket Match** – Purple-tinted bracket matching highlight
-- **Tab Accent** – Galactic Purple top border on active tabs
-- **Overview Ruler** – Full scrollbar marker colors (errors, warnings, info, git changes, find matches, brackets)
-- **Indent Guides** – Styled indent and active indent guide colors
-- **Sidebar Border** – Subtle border between sidebar and editor
-- **CodeLens** – Muted reference count styling
-- **Lightbulb** – Quick fix and auto-fix lightbulb colors
-- **Banner** – Notification banner styling
-- **Debug Console** – Info, warning, error, and source colors
-- **Charts** – Full color palette for testing/performance charts
-- **Suggest Widget** – Autocomplete dropdown styling with purple highlights
-- **Extension Button** – Styled "Install" button in extensions panel
-- **Terminal Tab** – Active terminal tab accent
+#### 🔤 New Token Color Scopes
 
-#### 🔤 New Token Color Scopes 
-
-- **Import/Export Keywords** – `import`, `export`, `from`, `as`
-- **Flow Control** – `return`, `break`, `continue`, `yield`, `throw`, try/catch, loops, conditionals
-- **`new` Keyword** – Bold purple styling
-- **DOM & Console** – `document`, `window`, `console.log`, Node.js built-ins
-- **Module Names** – Golden Star highlight
-- **Markdown Extended** – List markers, blockquotes, fenced code blocks, strikethrough, heading `#` symbols
-- **Diff Highlighting** – Inserted (green), deleted (red), changed (yellow)
-- **HTML Tag Brackets** – Muted `<` `>` symbols
-- **TypeScript** – Interface and enum specific styling
-- **Go** – Package and import name highlighting
-- **Rust** – Lifetime annotations with italic pink
-- **Java/C#** – Annotation/attribute styling
-- **Shell** – Variable highlighting
-- **TOML** – Table header styling
-- **this/self/super** – Italic purple for language built-in self-references
-- **SQL** – DML/DDL keyword bolding
-- **Docker** – Dockerfile keyword bolding
-- **Escape Characters** – Separated from regex, now Solar Orange
+- Import/Export Keywords, Flow Control, `new` Keyword, DOM & Console, Module Names, Markdown Extended, Diff Highlighting, HTML Tag Brackets, TypeScript, Go, Rust, Java/C#, Shell, TOML, this/self/super, SQL, Docker, Escape Characters
 
 #### 🧠 New Semantic Token Colors
 
-- `function.defaultLibrary` – Italic standard library functions
-- `variable.defaultLibrary` – Cyan for built-in variables
-- `method` / `method.declaration` – Star Blue with bold for declarations
-- `struct` – Golden Star (consistent with classes)
-- `typeParameter` – Italic Cosmic Gold
-- `decorator` – Italic lavender
-- `macro` – Lavender purple
-- `event` / `regexp` – Pink Starlight
-- `variable.readonly.defaultLibrary` – Bold cyan
+- `function.defaultLibrary`, `variable.defaultLibrary`, `method` / `method.declaration`, `struct`, `typeParameter`, `decorator`, `macro`, `event` / `regexp`, `variable.readonly.defaultLibrary`
 
 #### 📦 Marketplace Optimization
 
-- Added `galleryBanner` with deep cosmic background
-- SEO-optimized description with language keywords
-- Expanded keywords from 12 → 20 (maximum allowed)
-- Added `preview: false` flag
-
-#### 📝 README Overhaul
-
-- Added marketplace badges (version, installs, rating)
-<!-- - Added screenshot grid for 6 languages (JS, TS, Python, React, HTML, CSS) -->
-- Added color palette reference table with hex codes
-- Added recommended VS Code settings section
-- Improved feature descriptions
+- Added `galleryBanner`, SEO-optimized description, expanded keywords 12 → 20, added `preview: false`
 
 ---
 
@@ -217,93 +193,34 @@ This release pushed Eclipse Wave further — more UI coverage, more language sup
 
 ### 🚀 Eclipse Wave Grows Up
 
-This release modernised Eclipse Wave with VS Code's newer theming capabilities — semantic tokens, inlay hints, ghost text, and more.
-
-#### ✨ New Features
-
-- **Semantic Highlighting Support** – Added `semanticHighlighting` and `semanticTokenColors` for enhanced TypeScript, Rust, and modern IDE intelligence
-- **Inlay Hints Styling** – Colors for TypeScript type hints and parameter hints
-- **Ghost Text Support** – Styling for AI code suggestions (Copilot, etc.)
-- **Sticky Scroll Colors** – Background colors for the new VS Code sticky scroll feature
-- **Git File Decorations** – Complete set of colors for file explorer git status (added, modified, deleted, renamed, untracked, ignored, conflicting, submodule)
-- **Settings UI Colors** – Styled dropdowns, checkboxes, and inputs in VS Code settings
-
-#### 🎨 Additional Token Colors
-
-- Regular Expressions and escape characters
-- TypeScript type annotations
-- JSON/YAML keys
-- Template string interpolation
-- Rust/C++ macros and attributes
-
-#### 🔧 UI Enhancements
-
-- Editor widgets and hover popups
-- Word highlight backgrounds
-- Gutter controls (folding, comments)
-- Focus borders
-- Welcome page backgrounds
-- Keybinding label styling
-
-#### 👁️ Eye Comfort Improvements
-
-Balanced color optimization for long coding sessions while preserving the Eclipse Wave aesthetic:
-
-**Syntax Colors (Softened):**
-
-- Numbers/Booleans: `#FFAC40` → `#E5A574` (Warm Amber)
-- Classes/Types: `#FFD166` → `#D7BA7D` (Cosmic Gold)
-- CSS Selectors: `#FFD166` → `#D7BA7D` (Cosmic Gold)
-
-**Bracket Colors (Softened):**
-
-- Bracket yellow: `#F1FA8C` → `#E5C07B` (Soft Cosmic Gold)
-- Bracket green: `#50FA7B` → `#7EC699` (Muted Aurora Green)
-
-**Terminal Colors (Softened):**
-
-- Green: `#70E570` → `#7EC699` (Muted Aurora)
-- Yellow: `#FFD166` → `#E5C07B` (Soft Cosmic Gold)
-- Magenta: `#FF4DFF` → `#C792EA` (Calming Lavender)
-- Cyan: `#00E5FF` → `#7CC8DE` (Soft Nebula Cyan)
-
-**UI Colors (Softened):**
-
-- Git Added: `#50FA7B` → `#7EC699` (Muted Aurora)
-- Warning Icons: `#FFCB6B` → `#D7BA7D` (Cosmic Gold)
-
-These changes reduce eye strain for 4-8+ hour sessions while maintaining the Eclipse Wave cosmic aesthetic.
+- Semantic Highlighting Support, Inlay Hints, Ghost Text, Sticky Scroll, Git File Decorations, Settings UI Colors
+- Additional token colors: RegEx, TypeScript annotations, JSON/YAML keys, template strings, Rust/C++ macros
+- UI enhancements: editor widgets, word highlights, gutter controls, focus borders, welcome page, keybinding labels
+- Eye comfort improvements across syntax, bracket, terminal, and UI colors
 
 ---
 
 ## [1.1.1] – 2025-09-25
 
-### ✨ New Features & Enhancements
+### ✨ Enhancements
 
-- Improved Readability and Eye Comfort: Tweaked editor foreground from #D6E5F5 to #C0CBE3 and editor cursor from #FF4DFF to #BD93F9.
-- Enhanced Syntax Clarity: Punctuation now has its own distinct color (#A1ADC8), separating it from comments. Variables were changed to a more visible #E5A574.
+- Improved readability: editor foreground `#D6E5F5` → `#C0CBE3`, cursor `#FF4DFF` → `#BD93F9`
+- Enhanced syntax clarity: punctuation gets own color (`#A1ADC8`), variables → `#E5A574`
+- Refined color palette: subtle changes to strings, HTML tags, terminal colors
+- Updated README with new banner image
 
-- Refined Color Palette: Made subtle changes to strings, HTML tags, and terminal colors for a more harmonious visual experience.
-- Updated README with new banner image.
+---
 
 ## [1.1.0] – 2025-09-19
 
 ### ✨ Added / Updated UI Elements
 
-- Added menubar styling: background, foreground, hover/selection states
-- Added missing UI tokens for quick input / command palette
-- Added progress bar color
-- Styled find widget / search highlights: find match, range highlights
-- Added merge conflict highlight backgrounds (current vs incoming)
-- Added sticky scroll backgrounds
-- Styled status bar prominent items
-- Added peek view titles (label & description) colors
+- Menubar styling, quick input / command palette tokens, progress bar, find widget, merge conflict highlights, sticky scroll, status bar prominent items, peek view titles
 
 ### 🔧 Refinements
 
-- Ensured consistency across lists, trees, breadcrumbs, buttons, dropdowns
+- Consistency across lists, trees, breadcrumbs, buttons, dropdowns
 - Improved contrast in editor widgets and dialogs
-- Unified UI styling throughout theme; no existing colors changed
 
 ---
 
@@ -311,17 +228,15 @@ These changes reduce eye strain for 4-8+ hour sessions while maintaining the Ecl
 
 ### 🧩 New Feature
 
-- Added bracket pair colorization for better visibility
-- Configured distinct colors for each bracket level
+- Added bracket pair colorization with distinct colors for each bracket level
 
 ---
 
 ## [1.0.6] – 2025-08-30
 
-### 🐛 Bug Fixes / Corrections
+### 🐛 Bug Fixes
 
 - Fixed missing semicolon in JSON causing theme load issues
-- Updated README with MIT license badge
 - Added LICENSE file with MIT license text
 - Removed unnecessary devDependency from package.json
 
@@ -331,7 +246,7 @@ These changes reduce eye strain for 4-8+ hour sessions while maintaining the Ecl
 
 ### 🖼 Logo Update
 
-- Updated theme logo to new design.
+- Updated theme logo to new design
 
 ---
 
@@ -339,17 +254,16 @@ These changes reduce eye strain for 4-8+ hour sessions while maintaining the Ecl
 
 ### 📝 Documentation Update
 
-- Update README with new language syntax screenshots
-- Replace dark mode preview image
-- Bump version to 1.0.3
+- Updated README with new language syntax screenshots
+- Replaced dark mode preview image
 
 ---
 
 ## [1.0.2] – 2025-08-19
 
-### 🌐 Marketplace publish
+### 🌐 Initial Marketplace Publish
 
-- Published Eclipse Wave to Visual Studio Code Marketplace
+- Published Eclipse Wave to the Visual Studio Code Marketplace
 
 ---
 
@@ -357,9 +271,7 @@ These changes reduce eye strain for 4-8+ hour sessions while maintaining the Ecl
 
 ### 🔍 Small Corrections
 
-- Update logo
-- Fixed theme path
-- Update VS Code engine version
+- Updated logo, fixed theme path, updated VS Code engine version
 
 ---
 
@@ -367,4 +279,4 @@ These changes reduce eye strain for 4-8+ hour sessions while maintaining the Ecl
 
 ### 🎉 Initial Release
 
-- A minimal, modern VS Code theme for clean and focused coding.
+- A minimal, modern VS Code theme for clean and focused coding

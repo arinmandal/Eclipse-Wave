@@ -2,7 +2,7 @@
   "name": "eclipse-wave",
   "displayName": "Eclipse Wave",
   "description": "A cosmic dark theme with soft, eye-friendly colors — designed for long coding sessions. Beautiful syntax highlighting for JS, TS, Python, React, Rust, Go, HTML, CSS, Markdown & more.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "publisher": "ArinMandal",
   "license": "MIT",
   "repository": {
