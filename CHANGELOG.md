@@ -5,6 +5,18 @@ This project follows [Semantic Versioning](https://semver.org).
 
 ---
 
+## [2.1.1] – 2026-07-31
+
+### 📸 README Redesign
+
+- Replaced color palette hex tables with full-width screenshots — one per variant on real code
+- Each variant now has its own section with a screenshot and a short description of its vibe
+- Added Marketplace badges (version, installs, rating, license) styled with Eclipse Wave's own colors
+- Removed old language preview screenshots (`css.png`, `html.png`, `js.png`, `python.png`, `react.png`, `ts.png`, `preview.png`, `eclipse.png`) — replaced by 4 focused variant previews
+- Dark variant shown on TypeScript, Light on React JSX, Midnight on Python, Storm on Rust
+
+---
+
 ## [2.1.0] – 2026-07-29
 
 ### 🎨 Color Palette Upgrade
@@ -154,16 +166,16 @@ A dark blue-gray variant that sits between the original dark theme and Midnight.
 - **Full parity with the dark theme** — all 14 syntax token sections, semantic token colors, every UI region covered
 - **`uiTheme: vs`** — correctly registered as a light theme
 
-| Role | Dark | Light |
-|---|---|---|
-| Background | `#0B0F1A` Deep Cosmic Black | `#F5F4F9` Nebula White |
-| Keywords | `#9D7CFF` Galactic Purple | `#7A5FD0` Cosmic Violet |
-| Functions | `#82AAFF` Star Blue | `#2E5FA8` Deep Star Blue |
-| Strings | `#A1C682` Aurora Green | `#3A7A50` Deep Aurora Green |
-| Properties | `#7CC8DE` Nebula Cyan | `#277A82` Deep Teal |
-| Attributes | `#FF79C6` Pink Starlight | `#A0336B` Nebula Pink |
-| Classes | `#D7BA7D` Cosmic Gold | `#87642A` Earthy Gold |
-| Variables | `#E5A574` Warm Amber | `#B05E20` Earthy Amber |
+| Role       | Dark                        | Light                       |
+| ---------- | --------------------------- | --------------------------- |
+| Background | `#0B0F1A` Deep Cosmic Black | `#F5F4F9` Nebula White      |
+| Keywords   | `#9D7CFF` Galactic Purple   | `#7A5FD0` Cosmic Violet     |
+| Functions  | `#82AAFF` Star Blue         | `#2E5FA8` Deep Star Blue    |
+| Strings    | `#A1C682` Aurora Green      | `#3A7A50` Deep Aurora Green |
+| Properties | `#7CC8DE` Nebula Cyan       | `#277A82` Deep Teal         |
+| Attributes | `#FF79C6` Pink Starlight    | `#A0336B` Nebula Pink       |
+| Classes    | `#D7BA7D` Cosmic Gold       | `#87642A` Earthy Gold       |
+| Variables  | `#E5A574` Warm Amber        | `#B05E20` Earthy Amber      |
 
 ---
 
