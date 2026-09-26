@@ -5,6 +5,14 @@ This project follows [Semantic Versioning](https://semver.org).
 
 ---
 
+## [2.1.2] – 2026-09-26
+
+### 📦 Marketplace
+
+- Updated extension description — now reflects all 4 variants and full feature set
+
+---
+
 ## [2.1.1] – 2026-07-31
 
 ### 📸 README Redesign
