@@ -2,7 +2,12 @@
 src/
 tsconfig.json
 node_modules/
-
+gen/
+.vscode/
+assets/banner.png
+assets/logo.png
+*.vsix
+assets/*-preview*.png
 # Dev/CI config
 .github/
 .gitignore
