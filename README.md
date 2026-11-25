@@ -22,6 +22,10 @@
     <img src="https://img.shields.io/badge/license-MIT-FAB387?labelColor=1E2030" alt="License" />
   </a>
 </p>
+<p align="center">
+  <a href="https://ko-fi.com/arinmandal"><img src="https://img.shields.io/badge/Support%20on%20Ko--fi-FF5E5B?logo=kofi&logoColor=white" alt="Support on Ko-fi" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=ArinMandal.eclipse-wave&ssr=false#review-details">⭐ Rate Eclipse Wave</a>
+</p>
 
 ---
 
@@ -109,17 +113,55 @@ A cool blue-black canvas with strong color separation. Red-orange keywords, purp
 
 ```json
 {
-  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, monospace",
-  "editor.fontSize": 14,
-  "editor.fontLigatures": true,
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.smoothScrolling": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "workbench.colorTheme": "Eclipse Wave"
+	"editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, monospace",
+	"editor.fontSize": 14,
+	"editor.fontLigatures": true,
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.smoothScrolling": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": "active"
 }
 ```
+
+---
+
+## 🌓 Eclipse Mode — Auto Day/Night
+
+Let VS Code switch automatically: **Light** during the day, **Midnight** at night. It follows your operating system's light/dark setting.
+
+Add this to your `settings.json` (`Ctrl+Shift+P` → **Preferences: Open User Settings (JSON)**):
+
+```json
+{
+	"window.autoDetectColorScheme": true,
+	"workbench.preferredLightColorTheme": "Eclipse Wave Light",
+	"workbench.preferredDarkColorTheme": "Eclipse Wave Midnight"
+}
+```
+
+> Tip: swap `Eclipse Wave Midnight` for `Eclipse Wave` or `Eclipse Wave Storm` if you prefer.
+
+---
+
+## 🖥️ Terminal Ports
+
+Use Eclipse Wave colors outside VS Code too.
+
+### Windows Terminal
+
+**Option A — automatic (recommended)**
+
+1. Download [`windows-terminal.json`](https://raw.githubusercontent.com/arinmandal/Eclipse-Wave/main/extras/windows-terminal.json).
+2. Put it in `%LOCALAPPDATA%\Microsoft\Windows Terminal\Fragments\EclipseWave\` (create the folder).
+3. Restart Windows Terminal → `Ctrl+,` → **Profiles → Defaults → Appearance → Color scheme** → **Eclipse Wave** (or Light / Midnight / Storm).
+
+**Option B — manual**
+
+1. Press `Ctrl+Shift+,` to open `settings.json`.
+2. Paste the scheme objects from the file into the `"schemes": [ ... ]` list and save.
+3. Pick the scheme in Settings as above.
+
 ---
 
 ## 🛠️ Contribution
