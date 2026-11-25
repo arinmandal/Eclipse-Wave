@@ -5,6 +5,24 @@ This project follows [Semantic Versioning](https://semver.org).
 
 ---
 
+## [2.2.0] – 2026-11-26
+
+### 🧹 Cleanup
+
+- Removed legacy gen/ pipeline and duplicate theme files
+- Smaller package (logo optimized, banner excluded)
+
+### 💜 Support
+
+- Added Sponsor button (Support on Ko-fi)
+
+### 📖 README
+
+- Eclipse Mode (auto day/night switching), terminal ports, rating link
+- Windows Terminal port updated to v2 colors, now with all 4 variants
+
+---
+
 ## [2.1.2] – 2026-09-26
 
 ### 📦 Marketplace

@@ -1,8 +1,8 @@
 {
   "name": "eclipse-wave",
-  "displayName": "Eclipse Wave",
+  "displayName": "Eclipse Wave – Dark, Light & OLED Black Theme",
   "description": "Four VS Code theme variants in one — Dark, Light, Midnight (OLED), and Storm. Cosmic color palette, WCAG AA contrast verified, 305+ UI keys, full semantic highlighting for TypeScript, Python, Rust, React & more.",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "publisher": "ArinMandal",
   "license": "MIT",
   "repository": {
@@ -13,6 +13,9 @@
     "url": "https://github.com/arinmandal/Eclipse-Wave/issues"
   },
   "homepage": "https://github.com/arinmandal/Eclipse-Wave#readme",
+  "sponsor": {
+    "url": "https://ko-fi.com/arinmandal"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -41,9 +44,9 @@
     "bracket-colorization",
     "copilot"
   ],
-  "icon": "assets/logo.png",
+  "icon": "assets/icon.png",
   "galleryBanner": {
-    "color": "#0B0F1A",
+    "color": "#1E2030",
     "theme": "dark"
   },
   "contributes": {
@@ -79,7 +82,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.19.43",
-    "@vscode/vsce": "^3.0.0",
+    "@vscode/vsce": "^3.9.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
